@@ -5,9 +5,10 @@ import bodyParser from "body-parser"
 import ejs from "ejs"
 import nodemailer from 'nodemailer'
 import express from "express"
-import fetch from "node-fetch";
-import path from 'path';
 import { fileURLToPath } from 'url';
+import path from 'path';
+import fetch from "node-fetch";
+
 import mysql from 'mysql';
 import fileUpload from 'express-fileupload'
 import { title } from "process"
