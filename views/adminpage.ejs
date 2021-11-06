@@ -1,0 +1,106 @@
+<html data-wf-status="1"><head>
+   <meta charset="utf-8">
+   <title>Listing Items To DB</title>
+   <link href="https://assets.website-files.com/5f442b0a9e95ba3eb1242247/css/influencertemplate.webflow.15e74735e.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="page-wrapper">
+      <section class="section contact wf-section">
+         <div class="container-medium-672px w-container">
+            <div class="contact-form-wrapper">
+               <div data-w-id="25a6f6c7-f773-96ea-477c-53bd9ccd55fb" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="card contact">
+                  <div class="contact-form-block w-form">
+                     <form id="listing">
+                        <h5 class="title contact-form">You have Listed <%= lengthofrows %> of Items</h5>
+                        <h3 class="title contact-form">List A design</h3><div class="w-layout-grid contact-form-grid">
+    
+<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" placeholder="Product Title" id="title" required=""></div>
+<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" placeholder="Price" id="price" value="1.39"></div>
+<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" id="imageurl" required="" placeholder="Image URL"></div>
+<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" id="zipurl" placeholder="Google Drive URL" required=""></div>
+<div class="input-wrapper"><textarea placeholder="Description" maxlength="5000" id="description" class="message w-input"></textarea></div>
+<div class="input-wrapper"><textarea placeholder="Tags" maxlength="5000" id="tags" class="message w-input"></textarea></div>
+<div class="input-wrapper"><select placeholder="Tags" maxlength="5000" id="category" class="message w-input">
+  <option value="0">Anime</option>
+  <option value="1">cartoon</option>
+  <option value="2">gaming</option>
+  <option value="3">movies</option>
+  <option value="4">social media</option>
+  <option value="5">sport</option>
+  <option value="6">special events</option>
+  <option value="7">more</option>
+
+
+
+</select></div>
+
+
+
+
+
+                        <input type="submit" value="Submit" data-wait="Submit" class="button-primary w-button">
+                     
+                     <div class="success-message w-form-done">
+                        <div>Thank you! I will get back to you soon.</div>
+                     </div>
+                     <div class="error-message w-form-fail">
+                        <div>Oops! Something went wrong while submitting the message.</div>
+                     </div>
+                  </div></form>
+               </div>
+               <img src="https://assets.website-files.com/5f442b0a9e95ba3eb1242247/5f482b13aef01338c8cfdebc_shape-contact-05-influencer-template.svg" data-w-id="6c72fdfb-35b3-37ed-7037-e0561d3ba678" style="transform: translate3d(9.998px, -4.212px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d; will-change: transform;" alt="" class="shape contact-5"><img src="https://assets.website-files.com/5f442b0a9e95ba3eb1242247/5f482b12ab465435937b3fd3_shape-contact-04-influencer-template.svg" data-w-id="478e9d3a-3041-263c-4e0c-a85204193dce" style="transform: translate3d(-9.998px, 4.212px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d; will-change: transform;" alt="" class="shape contact-4"><img src="https://assets.website-files.com/5f442b0a9e95ba3eb1242247/5f482b138242afb9aa752d6d_shape-contact-03-influencer-template.svg" data-w-id="e1af53c6-6523-cb65-761e-d127b11270ce" style="transform: translate3d(19.996px, -8.424px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d; will-change: transform;" alt="" class="shape contact-3"><img src="https://assets.website-files.com/5f442b0a9e95ba3eb1242247/5f482b13204dbdb024d314c0_shape-contact-02-influencer-template.svg" data-w-id="3b3bb424-c386-c33a-84c5-06c18cde24ee" style="transform: translate3d(9.998px, -4.212px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d; will-change: transform;" alt="" class="shape contact-2"><img src="https://assets.website-files.com/5f442b0a9e95ba3eb1242247/5f482b122913b743600a5cff_shape-contact-01-influencer-template.svg" data-w-id="283007a2-814f-93f5-73ea-5c516d4f7c54" style="transform: translate3d(-19.996px, 8.424px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d; will-change: transform;" alt="" class="shape contact-1">
+            </div>
+         </div>
+         <div class="bg contact"></div>
+      </div></section>
+   </div>
+
+
+
+<script>
+
+  document.getElementById("listing").addEventListener("submit", (e) => {
+ e.preventDefault();
+ title = document.getElementById("title").value;
+   price = document.getElementById("price").value;
+   image = document.getElementById("imageurl").value;
+   zip = document.getElementById("zipurl").value;
+   
+   
+   
+   description = document.getElementById("description").value;
+   tags = document.getElementById("tags").value;
+   category = document.getElementById("category").value;
+   
+     fetch("/createlisting", {
+       method: "POST",
+       headers: { "Content-type": "application/json" },
+
+       body: JSON.stringify({
+title ,
+ price ,
+ tags ,
+ zip ,
+ image ,
+ description ,
+ category
+
+
+
+       })
+      })
+       .then((res) => res.json())
+       .then((data) => {
+   
+       })
+   
+   
+   
+   
+  })
+   
+   
+      </script>
+
+
+</body></html>

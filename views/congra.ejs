@@ -1,0 +1,445 @@
+<html class="js"><!--<![endif]--><head>
+
+  
+  
+  
+  
+    <!-- Styles -->
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+                  
+  
+            
+  @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+                      
+            
+      
+      :root {
+        --font_size: 14px;
+        --font_size_minus1: 13px;
+        --font_size_minus2: 12px;
+        --font_size_minus3: 11px;
+        --font_size_minus4: 10px;
+        --font_size_plus1: 15px;
+        --font_size_plus2: 16px;
+        --font_size_plus3: 17px;
+        --font_size_plus4: 18px;
+        --font_size_plus5: 19px;
+        --font_size_plus6: 20px;
+        --font_size_plus7: 21px;
+        --font_size_plus8: 22px;
+        --font_size_plus9: 23px;
+        --font_size_plus10: 24px;
+        --font_size_plus11: 25px;
+        --font_size_plus12: 26px;
+        --font_size_plus13: 27px;
+        --font_size_plus14: 28px;
+        --font_size_plus16: 30px;
+        --font_size_plus18: 32px;
+        --font_size_plus21: 35px;
+        --font_size_plus22: 36px;
+        --font_size_plus23: 37px;
+        --font_size_plus24: 38px;
+        --font_size_plus33: 47px;
+  
+        --fonts_name: DM Sans;
+        --fonts_name_2: Rubik;
+  
+        /* Color */
+        --body_bg: #ffffff;
+        --body_color: #505050;
+        --link_color: #0a6cdc;
+        --link_color_hover: #232323;
+  
+        /* Breadcrumb */
+        --breadcrumb_color : #808080;
+        --breadcrumb_text_transform : capitalize;
+  
+        /* Header and Title */
+        --page_title_font_size: 20px;
+        --page_title_font_size_minus4: 16px;
+        --page_title_font_size_plus5: 25px;
+        --page_title_color: #202020;
+        --page_title_text_align : left;
+  
+        /* Product  */
+        --product_text_transform : none;
+        --product_name_text_align : left;
+        --color_title_pr: #202020;
+        --color_title_pr_hover: #202020;
+        --color_vendor : #202020;
+        --sale_text : #e10600;
+        --bg_sale : #ffd8d7;
+        --custom_label_text : #fd9427;
+        --custom_label_bg : #feedbd;
+        --bundle_label_text : #43b200;
+        --bundle_label_bg : #d7ffd2;
+        --new_label_text : #0a6cdc;
+        --new_label_bg : #d2e7ff;
+        --new_label_border : #d2e7ff;
+        --sold_out_text : #505050;
+        --bg_sold_out : #e7e7e7;
+        --color_price: #202020;
+        --color_price_sale: #e10600;
+        --color_compare_price: #505050;
+        --color_compare_product: #ffffff;
+        
+          --color_quick_view: #202020;
+          --bg_quick_view: #ffffff;
+        
+        --color_wishlist: #0e0e0e;
+        --bg_wishlist: #f5f5f5;
+        --bg_wishlist_active: #ffe5e5;
+  
+  
+        /* Button 1 */
+        --background_1: #0a6cdc;
+        --color_1 : #ffffff;
+        --border_1 : #0a6cdc;
+  
+        /* Button 2 */
+        --background_2: #ffffff;
+        --color_2 : #202020;
+        --border_2 : #505050;
+  
+        /* Button 3 */
+        --background_3: #202020;
+        --color_3 : #ffffff;
+        --border_3 : #202020;
+  
+        /* Button Add To Cart */
+        --color_add_to_cart : #fff;
+        --border_add_to_cart : #000;
+        --background_add_to_cart : #000;
+  
+        --color_add_to_cart_hover : #000;
+        --border_add_to_cart_hover : #000;
+        --background_add_to_cart_hover : #fff;
+  
+  
+        /* Button */
+        
+          --button_font_family: Rubik;
+        
+        --button_font_size: px;
+        --button_font_weight: ;
+        --button_border_radius: px;
+        --button_border_width: px;
+        --button_border_style: ;
+        --button_text_align: ;
+        --button_text_transform: ;
+        --button_letter_spacing: ;
+        --button_padding_top: px;
+        --button_padding_bottom: px;
+        --button_padding_left: px;
+        --button_padding_right: px;
+  
+        
+  
+        /* Border Color */
+        --border_widget_title : #e0e0e0;
+        --border_color_1 : #ebebeb;
+        --border_color_2: #e7e7e7;
+        --border_page_title: #eaeaea;
+        --border_input: #cbcbcb;
+        --border_checkbox: #d0d0d0;
+        --border_dropdown: #dadada;
+        --border_bt_sidebar : #f6f6f6;
+        --color_ipt: #3c3c3c;
+        --color_icon_drop: #6b6b6b;
+  
+        
+        --color_slick_arrow: #212121;
+        --color_border_slick_arrow: #505050;
+        --color_bg_slick_arrow: #ffffff;
+        
+  
+        /*color Mobile*/
+  
+        --color_menu_mb: #232323;
+        --color_menu_level3: #3c3c3c;
+  
+        /* Mixin ================= */
+        
+            --padding_btn: 14px 15px 12px !important;
+            --padding_btn_bundle: 14px 15px 12px;
+            --padding_btn_qv_add_to_cart: 14px 15px 12px;
+            --font_size_btn: var(--font_size);
+            --letter_spacing_btn: 0;
+        
+  
+        
+        
+            --color-price-box: var(--color_compare_price);
+        
+  
+        --color_review: #fac325;
+        --color_review_empty: #cccccc;
+  
+        --border-product-image: #e6e6e6;
+  
+        
+        --border-radius-17: 0;
+        --border-radius-50: 0;
+        
+      }
+  </style>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/css/congra.css" rel="stylesheet" type="text/css" media="all">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+    
+     
+    
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+    
+    
+    
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  </head>
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6186a6ab6bb0760a49416d55/1fjqvm3v4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  <body style="" class="template-cart style_product_grid_4 layout_style_suppermarket  before-you-leave-disableMobile product_layout_supermarket">
+  
+      
+  
+      
+  
+  
+        
+      
+  
+  
+     
+  
+          
+  
+      
+      
+  
+      <div class="wrapper-container wrapper-body">	
+          <main class="main-content" role="main">      
+              <div id="shopify-section-template--14133957394483__main" class="shopify-section"><div class="cart-template">
+    <div class="container">
+        
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+    
+        
+        
+    
+    
+        
+    
+  
+  
+        <div class="cart__count_down alert alert-warning text-center" role="alert" style="
+        background-color: lightgreen;
+    ">
+                <svg class="icon icon-error" viewBox="0 0 100 100"><path d="M53,31c0,1.7-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-1.7,1.3-3,3-3C51.7,28,53,29.3,53,31z M50,37c-1.7,0-3,1.4-3,3v29  c0,1.7,1.3,3,3,3c1.7,0,3-1.4,3-3V40C53,38.3,51.7,37,50,37z M95,50c0,24.8-20.2,45-45,45C25.2,95,5,74.8,5,50C5,25.2,25.2,5,50,5  C74.8,5,95,25.2,95,50z M91,50C91,27.4,72.6,9,50,9S9,27.4,9,50s18.4,41,41,41S91,72.6,91,50z"></path></svg>
+                <div class="count_down" data-time="30">Please note that we don't accept refunds ,only in case the item is damaged.The support team usually responds within minutes if you wish for a refund using the chat button below.</div>
+            </div><dev class="cart-form wrapper-cart-template" style="
+  ">
+    <div>
+      
+        <div class="cart-header" style="
+        background-color: #007bff;
+    ">
+            <div class="cart--title">
+              Products 
+            </div>
+            <div class="cart--price">
+              Price
+            </div>
+            
+            <div class="cart--total h-mobile">Download</div>
+            <div class="cart--remove h-mobile">
+              
+            </div>
+          </div>
+      
+      
+      <ul class="cart-list">
+        
+    ,<%- htmldownload %>
+        
+      </ul><!-- cart.attributes.gift-wrapping -->
+  
+  
+  
+  
+  
+    
+    
+    
+  
+    
+  
+  
+  
+  
+      
+      <dev id="reviews"><label class="add-comments" for="cartSpecialInstructions">
+        <span>Give us a review</span>
+      </label><textarea name="note" class="input-full" id="cartSpecialInstructions" placeholder="Write us a review..."></textarea><div style="
+      height: 40px;
+  "> <button class="transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" style="
+      background-color: #6b7280;
+  " onclick="submitreview()"> 
+
+Submit
+<i class="bx bx-down-arrow-alt animate-bounce text-xl"></i></button>
+  </div></dev>
+
+
+
+    </div>
+      
+      
+      
+    </div>
+    
+    
+    
+</dev>
+  
+  
+  
+    
+      
+          
+  
+  
+  
+   
+  
+      
+    </div> 
+     
+  </div>
+  
+  </div>
+          </main>
+  
+          
+  
+          
+                
+              
+  
+          
+          
+          
+          
+          
+          
+        
+      </div>
+<script>
+function submitreview(){
+    document.querySelector("#reviews").innerHTML = "Submitted! Thank You For Your Review"
+}
+
+</script>
+  </body></html>

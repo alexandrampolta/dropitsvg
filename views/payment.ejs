@@ -1,0 +1,440 @@
+<html lang="en" dir="ltr" style=""><head>
+<link rel="stylesheet" href="/css/payment.css">
+<style>
+
+
+
+  #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1001
+  }
+  
+  #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 8vmax;
+      height: 8vmax;
+      margin: -4vmax;
+      border-radius: 50%;
+      border: 4px solid transparent;
+      border-top-color: #FFFFFF;
+      animation: spin 1s linear infinite
+  }
+  
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg)
+      }
+  
+      100% {
+          transform: rotate(360deg)
+      }
+  }
+  </style>
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  </head>
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6186a6ab6bb0760a49416d55/1fjqvm3v4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  
+  
+  <body class="js windows chrome desktop page--no-banner page--logo-main page--show page--show card-fields cors svg opacity placeholder no-touchevents displaytable display-table generatedcontent cssanimations flexbox no-flexboxtweener anyflexbox no-shopemoji floating-labels cors svg opacity placeholder no-touchevents displaytable display-table generatedcontent cssanimations flexbox no-flexboxtweener anyflexbox no-shopemoji">
+  
+        
+
+
+
+
+    
+  
+
+
+  
+
+    <div id="loader-wrapper" style="display:none">
+      <div id="loader" style="
+      border-top-color: blue;
+  ">
+  
+  </div>
+  </div>
+
+
+
+    <div class="content" data-content="">
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+              
+  <a class="logo logo--left" href="/"><span class="logo__text heading-1">Dropitsvg.com</span></a>
+
+
+
+
+                  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb " role="list">
+
+          <li class="breadcrumb__item breadcrumb__item--current" aria-current="step">
+          <span class="breadcrumb__text">Information</span>
+            <svg class="icon-svg icon-svg--color-adaptive-light icon-svg--size-10 breadcrumb__chevron-icon" aria-hidden="true" focusable="false"> <use xlink:href="#chevron-right"></use> </svg>
+        </li>
+          
+          <li class="breadcrumb__item breadcrumb__item--blank">
+          <span class="breadcrumb__text">Payment</span>
+        </li>
+    </ol>
+  </nav>
+
+
+
+                <div class="shown-if-js" data-alternative-payments="">
+</div>
+
+
+
+          </header>
+          <main class="main__content" role="main">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<div class="step" data-step="contact_information" data-last-step="false">
+  <dev class="paypal-checkitout" style="display: none;">
+
+    <div id="paypal-button-container"></div>
+  
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AUHUiKxuQ3bT5zWgqh_PLziAzuhmgf6G_11qlAr5W-5rxCzz9OPvjUONDJ3pAbiXrCAGNvdzUPeUORxo&currency=USD"></script>
+    
+    <%- jscheckout %>
+  </dev>
+  <div class="step__sections" id="emailed">
+      
+<div class="section section--contact-information">
+  <div class="section__header">
+    <div class="layout-flex layout-flex--tight-vertical layout-flex--loose-horizontal layout-flex--wrap">
+      <h2 class="section__title layout-flex__item layout-flex__item--stretch" id="main-header" tabindex="-1">Continue as a guest</h2>
+
+        
+    </div>
+  </div>
+  <div class="section__content" data-section="customer-information" data-shopify-pay-validate-on-load="false">
+        <div class="fieldset">
+          <div data-shopify-pay-email-flow="false" class="field field--required">
+            
+            <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_email">Email</label>
+              <input placeholder="Email" autocapitalize="off" spellcheck="false" autocomplete="shipping email" data-autofocus="true" data-backup="customer_email" aria-describedby="checkout-context-step-one" aria-required="true" class="field__input" size="30" type="email" name="checkout[email]" id="buyer-email">
+            </div>
+</div>        </div> 
+
+        <div class="fieldset-description" data-buyer-accepts-marketing="">
+          <div class="section__content">
+            <div class="checkbox-wrapper">
+  <div class="checkbox__input">
+    
+  </div>
+  <label class="checkbox__label" for="checkout_buyer_accepts_marketing">we will send you download link of your purchase to this email in case you lost download page</label></div>
+
+          <div class="checkbox-wrapper">
+  <div class="checkbox__input">
+    <input name="checkout[buyer_accepts_marketing]" type="hidden" value="0" autocomplete="off"><input class="input-checkbox" data-backup="buyer_accepts_marketing" type="checkbox" value="1" name="checkout[buyer_accepts_marketing]" id="checkout_buyer_accepts_marketing">
+  </div>
+  <label class="checkbox__label" for="checkout_buyer_accepts_marketing">
+    Email me with news and offers
+</label></div></div>
+        </div>
+  </div> 
+
+
+  
+</div> 
+
+
+  
+
+
+
+
+    
+    
+  </div>
+
+<dev id="notes" style="display: none;">
+
+  <div class="step__footer" data-step-footer="">
+
+    <dev class="step__footer__continue-btn btn" style="
+    background-color: #009cde;
+    "><span class="btn__content" data-continue-button-content="true">There will be no physical items sent. Once you confirm your payment, you'll be redirected to a new page with links to your downloads on Google Drive.</span></dev>
+    <br>
+    </div><button class="step__footer__continue-btn btn" href="/" style="
+    background-color: #1b1d1d;
+    "><svg focusable="false" aria-hidden="true" class="icon-svg icon-svg--color-accent icon-svg--size-10 previous-link__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path></svg><span class="step__footer__previous-link-content">Return to Home Page</span></button>
+
+</dev>
+
+  <div class="step__footer" data-step-footer="">
+    <button name="button" type="submit" id="continue_button" class="step__footer__continue-btn btn" aria-busy="false" onclick="ctntopayment()"><span class="btn__content" data-continue-button-content="true">Continue to payment</span><svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xlink:href="#spinner-button"></use> </svg></button>
+    <a class="step__footer__previous-link" href="/"><svg focusable="false" aria-hidden="true" class="icon-svg icon-svg--color-accent icon-svg--size-10 previous-link__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M8 1L7 0 3 4 2 5l1 1 4 4 1-1-4-4"></path></svg><span class="step__footer__previous-link-content">Return to Home Page</span></a>
+</div>
+
+
+
+
+</dev>
+</div>
+
+
+  
+
+
+
+
+          </main>
+          <footer class="main__footer" role="contentinfo">
+                <p class="copyright-text ">
+    All rights reserved svgdropit
+  </p>
+
+
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          
+          <div class="sidebar__content">
+                <div id="order-summary" class="order-summary order-summary--is-expanded" data-order-summary="">
+  <h2>Order summary</h2>
+
+  <div class="order-summary__sections">
+    <div class="order-summary__section order-summary__section--product-list">
+  <div class="order-summary__section__content">
+    <table class="product-table">
+      
+      
+      <tbody data-order-summary-section="line-items">
+        
+    <%- cartmain %>
+    
+      </tbody>
+    </table>
+
+    <div class="order-summary__scroll-indicator" aria-hidden="true" tabindex="-1">
+      Scroll for more items
+      <svg aria-hidden="true" focusable="false" class="icon-svg icon-svg--size-12"> <use xlink:href="#down-arrow"></use> </svg>
+    </div>
+  </div>
+</div>
+
+
+      <div class="order-summary__section order-summary__section--discount" data-reduction-form="update">
+        <h3 class="visually-hidden">Discount</h3>
+
+
+        <form class="edit_checkout animate-floating-labels" action="/6444351539/checkouts/349d66cb272e21c9a4789c5e03412a53" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" autocomplete="off"><input type="hidden" name="authenticity_token" value="43mOiaDh7GyBvKyssdPDY8VnuPEngU-_oPi-WoGehckNRvRCGA2WnCqrkoaBqKQ7-4Dp2Z_m6URuKGyXpqk9gg" autocomplete="off">
+  <input type="hidden" name="step" value="contact_information" autocomplete="off">
+<input type="hidden" name="checkout[client_details][browser_width]" value="1583"><input type="hidden" name="checkout[client_details][browser_height]" value="757"><input type="hidden" name="checkout[client_details][javascript_enabled]" value="1"><input type="hidden" name="checkout[client_details][color_depth]" value="24"><input type="hidden" name="checkout[client_details][java_enabled]" value="false"><input type="hidden" name="checkout[client_details][browser_tz]" value="-60"><input type="hidden" name="checkout[client_details][browser_width]" value="1139"><input type="hidden" name="checkout[client_details][browser_height]" value="757"><input type="hidden" name="checkout[client_details][javascript_enabled]" value="1"><input type="hidden" name="checkout[client_details][color_depth]" value="24"><input type="hidden" name="checkout[client_details][java_enabled]" value="false"><input type="hidden" name="checkout[client_details][browser_tz]" value="-60"></form>
+<form class="edit_checkout animate-floating-labels" action="/6444351539/checkouts/349d66cb272e21c9a4789c5e03412a53" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" autocomplete="off"><input type="hidden" name="authenticity_token" value="XSHa5YZNQQN5ke33YnbYIdbB0vvPzsZWT52ztVUTaISzHqAuPqE789KG091SDb956CaD03epYK2BTWF4ciTQzw" autocomplete="off">
+  <input type="hidden" name="step" value="contact_information" autocomplete="off">
+  <div class="fieldset">
+    <div class="field">
+      
+      <div class="field__input-btn-wrapper">
+        <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_reduction_code">Discount code</label>
+          <input placeholder="Discount code" class="field__input" id="checkout_reduction_code" data-discount-field="true" autocomplete="off" aria-required="true" size="30" type="text" name="checkout[reduction_code]">
+        </div>
+
+        <button name="button" type="submit" class="field__input-btn btn btn--disabled" aria-busy="false" disabled="disabled">
+          <span class="btn__content visually-hidden-on-mobile" aria-hidden="true">
+            Apply
+          </span>
+          <span class="visually-hidden">
+            Apply Discount Code
+          </span>
+          <svg class="icon-svg icon-svg--size-16 btn__icon shown-on-mobile" aria-hidden="true" focusable="false"> <use xlink:href="#arrow"></use> </svg>
+          <svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xlink:href="#spinner-button"></use> </svg>
+</button>      </div>
+
+    </div>
+  </div>
+<input type="hidden" name="checkout[client_details][browser_width]" value="1583"><input type="hidden" name="checkout[client_details][browser_height]" value="757"><input type="hidden" name="checkout[client_details][javascript_enabled]" value="1"><input type="hidden" name="checkout[client_details][color_depth]" value="24"><input type="hidden" name="checkout[client_details][java_enabled]" value="false"><input type="hidden" name="checkout[client_details][browser_tz]" value="-60"><input type="hidden" name="checkout[client_details][browser_width]" value="1139"><input type="hidden" name="checkout[client_details][browser_height]" value="757"><input type="hidden" name="checkout[client_details][javascript_enabled]" value="1"><input type="hidden" name="checkout[client_details][color_depth]" value="24"><input type="hidden" name="checkout[client_details][java_enabled]" value="false"><input type="hidden" name="checkout[client_details][browser_tz]" value="-60"></form>
+
+      </div>
+
+    <div class="order-summary__section order-summary__section--total-lines" data-order-summary-section="payment-lines">
+      <table class="total-line-table">
+  <caption class="visually-hidden">Cost summary</caption>
+  <thead>
+    <tr>
+      <th scope="col"><span class="visually-hidden">Description</span></th>
+      <th scope="col"><span class="visually-hidden">Price</span></th>
+    </tr>
+  </thead>
+    <tbody class="total-line-table__tbody">
+      <tr class="total-line total-line--subtotal">
+  <th class="total-line__name" scope="row">Subtotal</th>
+  <td class="total-line__price">
+    <span class="order-summary__emphasis skeleton-while-loading">
+      $<%= totalprice %>
+    </span>
+  </td>
+</tr>
+
+
+        <tr class="total-line total-line--shipping">
+  <th class="total-line__name" scope="row">
+      <span>
+        Shipping
+      </span>
+
+  </th>
+  <td class="total-line__price">
+    <span class="skeleton-while-loading order-summary__small-text" data-checkout-total-shipping-target="0">Free</span>
+  </td>
+</tr>
+
+
+
+        <tr class="total-line total-line--taxes hidden" data-checkout-taxes="">
+  <th class="total-line__name" scope="row">Taxes (estimated)</th>
+  <td class="total-line__price">
+    <span class="order-summary__emphasis skeleton-while-loading" data-checkout-total-taxes-target="0">$0.00</span>
+  </td>
+</tr>
+
+
+      
+
+    </tbody>
+  <tfoot class="total-line-table__footer">
+    <tr class="total-line">
+      <th class="total-line__name payment-due-label" scope="row">
+        <span class="payment-due-label__total">Total</span>
+      </th>
+      <td class="total-line__price payment-due" data-presentment-currency="USD">
+        <span class="payment-due__currency remove-while-loading">USD</span>
+        <span class="payment-due__price skeleton-while-loading--lg" data-checkout-payment-due-target="6900">
+          $<%= totalprice %>
+        </span>
+      </td>
+    </tr>
+
+  </tfoot>
+</table>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    
+
+
+
+  
+
+<script>
+function ctntopayment(){
+//check if email is email 
+//hide email dev
+//braing paypal dev
+//done with it
+
+var email = document.getElementById("buyer-email").value
+function validateEmail(email) 
+  {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+  }
+  
+  
+  
+  if(validateEmail(email)==true){
+
+
+document.getElementById("emailed").style.display = "none";
+document.getElementsByClassName("paypal-checkitout")[0].style.display = "block";
+document.getElementsByClassName("step__footer")[1].style.display = "none";
+document.getElementById("notes").style.display = "block";
+
+
+
+
+}
+
+
+
+}
+
+</script>
+    </body></html>

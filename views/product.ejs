@@ -1,0 +1,5331 @@
+<html style="padding-bottom: 60px;" class=""><!--<![endif]--><head>
+
+    <!-- Styles -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="<%= title%> | Dropitsvg.com">
+    <meta property="og:description" content="<%= description%>">
+    <meta name="keywords" content="<%=tags%>">
+    <link rel="shortcut icon" href="https://dropitsvg.com/images/logo.svg" type="image/x-icon">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:site_name" content="DROP IT SVG">
+    <title><%= title %>| Dropitsvg.com</title>
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="<%=imageurl%>">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+    <meta property="og:url" content="https://svgdrop.com/product/<%=id%>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Est. reading time">
+    <meta name="twitter:data1" content="1 minute">
+    <link rel="canonical" href="https://svgdrop.com/product/<%=id%>">
+    <link canonical-shop-url="https://svgdrop.com/product/<%=id%>">
+    <meta name="generator" content="Site Kit by Google 1.44.0">
+    <meta property="product:price:amount" content="<%=price%>">
+    <meta property="product:price:currency" content="USD">
+    <meta property="og:availability" content="instock">
+    <meta property="pinterest:richpins" content="enabled">
+
+
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gidole-regular" type="text/css">
+ 
+ 
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+    
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+                  
+  
+            
+  @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+                      
+            
+      
+      :root {
+        --font_size: 14px;
+        --font_size_minus1: 13px;
+        --font_size_minus2: 12px;
+        --font_size_minus3: 11px;
+        --font_size_minus4: 10px;
+        --font_size_plus1: 15px;
+        --font_size_plus2: 16px;
+        --font_size_plus3: 17px;
+        --font_size_plus4: 18px;
+        --font_size_plus5: 19px;
+        --font_size_plus6: 20px;
+        --font_size_plus7: 21px;
+        --font_size_plus8: 22px;
+        --font_size_plus9: 23px;
+        --font_size_plus10: 24px;
+        --font_size_plus11: 25px;
+        --font_size_plus12: 26px;
+        --font_size_plus13: 27px;
+        --font_size_plus14: 28px;
+        --font_size_plus16: 30px;
+        --font_size_plus18: 32px;
+        --font_size_plus21: 35px;
+        --font_size_plus22: 36px;
+        --font_size_plus23: 37px;
+        --font_size_plus24: 38px;
+        --font_size_plus33: 47px;
+  
+        --fonts_name: DM Sans;
+        --fonts_name_2: Rubik;
+  
+        /* Color */
+        --body_bg: #ffffff;
+        --body_color: #505050;
+        --link_color: #0a6cdc;
+        --link_color_hover: #232323;
+  
+        /* Breadcrumb */
+        --breadcrumb_color : #808080;
+        --breadcrumb_text_transform : capitalize;
+  
+        /* Header and Title */
+        --page_title_font_size: 20px;
+        --page_title_font_size_minus4: 16px;
+        --page_title_font_size_plus5: 25px;
+        --page_title_color: #202020;
+        --page_title_text_align : left;
+  
+        /* Product  */
+        --product_text_transform : none;
+        --product_name_text_align : left;
+        --color_title_pr: #202020;
+        --color_title_pr_hover: #202020;
+        --color_vendor : #202020;
+        --sale_text : #e10600;
+        --bg_sale : #ffd8d7;
+        --custom_label_text : #fd9427;
+        --custom_label_bg : #feedbd;
+        --bundle_label_text : #43b200;
+        --bundle_label_bg : #d7ffd2;
+        --new_label_text : #0a6cdc;
+        --new_label_bg : #d2e7ff;
+        --new_label_border : #d2e7ff;
+        --sold_out_text : #505050;
+        --bg_sold_out : #e7e7e7;
+        --color_price: #202020;
+        --color_price_sale: #e10600;
+        --color_compare_price: #505050;
+        --color_compare_product: #ffffff;
+        
+          --color_quick_view: #202020;
+          --bg_quick_view: #ffffff;
+        
+        --color_wishlist: #0e0e0e;
+        --bg_wishlist: #f5f5f5;
+        --bg_wishlist_active: #ffe5e5;
+  
+  
+        /* Button 1 */
+        --background_1: #0a6cdc;
+        --color_1 : #ffffff;
+        --border_1 : #0a6cdc;
+  
+        /* Button 2 */
+        --background_2: #ffffff;
+        --color_2 : #202020;
+        --border_2 : #505050;
+  
+        /* Button 3 */
+        --background_3: #202020;
+        --color_3 : #ffffff;
+        --border_3 : #202020;
+  
+        /* Button Add To Cart */
+        --color_add_to_cart : #fff;
+        --border_add_to_cart : #000;
+        --background_add_to_cart : #000;
+  
+        --color_add_to_cart_hover : #000;
+        --border_add_to_cart_hover : #000;
+        --background_add_to_cart_hover : #fff;
+  
+  
+        /* Button */
+        
+          --button_font_family: Rubik;
+        
+        --button_font_size: px;
+        --button_font_weight: ;
+        --button_border_radius: px;
+        --button_border_width: px;
+        --button_border_style: ;
+        --button_text_align: ;
+        --button_text_transform: ;
+        --button_letter_spacing: ;
+        --button_padding_top: px;
+        --button_padding_bottom: px;
+        --button_padding_left: px;
+        --button_padding_right: px;
+  
+        
+  
+        /* Border Color */
+        --border_widget_title : #e0e0e0;
+        --border_color_1 : #ebebeb;
+        --border_color_2: #e7e7e7;
+        --border_page_title: #eaeaea;
+        --border_input: #cbcbcb;
+        --border_checkbox: #d0d0d0;
+        --border_dropdown: #dadada;
+        --border_bt_sidebar : #f6f6f6;
+        --color_ipt: #3c3c3c;
+        --color_icon_drop: #6b6b6b;
+  
+        
+        --color_slick_arrow: #212121;
+        --color_border_slick_arrow: #505050;
+        --color_bg_slick_arrow: #ffffff;
+        
+  
+        /*color Mobile*/
+  
+        --color_menu_mb: #232323;
+        --color_menu_level3: #3c3c3c;
+  
+        /* Mixin ================= */
+        
+            --padding_btn: 14px 15px 12px !important;
+            --padding_btn_bundle: 14px 15px 12px;
+            --padding_btn_qv_add_to_cart: 14px 15px 12px;
+            --font_size_btn: var(--font_size);
+            --letter_spacing_btn: 0;
+        
+  
+        
+        
+            --color-price-box: var(--color_compare_price);
+        
+  
+        --color_review: #fac325;
+        --color_review_empty: #cccccc;
+  
+        --border-product-image: #e6e6e6;
+  
+        
+        --border-radius-17: 0;
+        --border-radius-50: 0;
+        
+      }
+  </style>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+  
+  
+      <link href="/css/productsdrop.css" rel="stylesheet" type="text/css" media="all">
+  
+  
+  
+  
+    
+     <style>
+       html{
+          overflow-x:hidden;
+       }
+     
+  @import url('https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+               
+  
+            
+  @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+                   
+            
+      
+      :root {
+        --font_size: 14px;
+        --font_size_minus1: 13px;
+        --font_size_minus2: 12px;
+        --font_size_minus3: 11px;
+        --font_size_minus4: 10px;
+        --font_size_plus1: 15px;
+        --font_size_plus2: 16px;
+        --font_size_plus3: 17px;
+        --font_size_plus4: 18px;
+        --font_size_plus5: 19px;
+        --font_size_plus6: 20px;
+        --font_size_plus7: 21px;
+        --font_size_plus8: 22px;
+        --font_size_plus9: 23px;
+        --font_size_plus10: 24px;
+        --font_size_plus11: 25px;
+        --font_size_plus12: 26px;
+        --font_size_plus13: 27px;
+        --font_size_plus14: 28px;
+        --font_size_plus16: 30px;
+        --font_size_plus18: 32px;
+        --font_size_plus21: 35px;
+        --font_size_plus22: 36px;
+        --font_size_plus23: 37px;
+        --font_size_plus24: 38px;
+        --font_size_plus33: 47px;
+  
+       --fonts_name: DM Sans;
+       --fonts_name_2: Rubik;
+  
+        /* Color */
+        --body_bg: #ffffff;
+        --body_color: #505050;
+        --link_color: #0a6cdc;
+        --link_color_hover: #232323;
+  
+        /* Breadcrumb */
+        --breadcrumb_color : #808080;
+        --breadcrumb_text_transform : capitalize;
+  
+        /* Header and Title */
+        --page_title_font_size: 20px;
+        --page_title_font_size_minus4: 16px;
+        --page_title_font_size_plus5: 25px;
+        --page_title_color: #202020;
+        --page_title_text_align : left;
+  
+        /* Product  */
+        --product_text_transform : none;
+        --product_name_text_align : left;
+        --color_title_pr: #202020;
+        --color_title_pr_hover: #202020;
+        --color_vendor : #202020;
+        --sale_text : #e10600;
+        --bg_sale : #ffd8d7;
+        --custom_label_text : #fd9427;
+        --custom_label_bg : #feedbd;
+        --bundle_label_text : #43b200;
+        --bundle_label_bg : #d7ffd2;
+        --new_label_text : #0a6cdc;
+        --new_label_bg : #d2e7ff;
+        --new_label_border : #d2e7ff;
+        --sold_out_text : #505050;
+        --bg_sold_out : #e7e7e7;
+        --color_price: #202020;
+        --color_price_sale: #e10600;
+        --color_compare_price: #505050;
+        --color_compare_product: #ffffff;
+        
+          --color_quick_view: #202020;
+          --bg_quick_view: #ffffff;
+        
+        --color_wishlist: #0e0e0e;
+        --bg_wishlist: #f5f5f5;
+        --bg_wishlist_active: #ffe5e5;
+  
+  
+        /* Button 1 */
+        --background_1: #0a6cdc;
+        --color_1 : #ffffff;
+        --border_1 : #0a6cdc;
+  
+        /* Button 2 */
+        --background_2: #ffffff;
+        --color_2 : #202020;
+        --border_2 : #505050;
+  
+        /* Button 3 */
+        --background_3: #202020;
+        --color_3 : #ffffff;
+        --border_3 : #202020;
+  
+        /* Button Add To Cart */
+        --color_add_to_cart : #fff;
+        --border_add_to_cart : #000;
+        --background_add_to_cart : #000;
+  
+        --color_add_to_cart_hover : #000;
+        --border_add_to_cart_hover : #000;
+        --background_add_to_cart_hover : #fff;
+  
+  
+        /* Button */
+        
+          --button_font_family: Rubik;
+        
+        --button_font_size: px;
+        --button_font_weight: ;
+        --button_border_radius: px;
+        --button_border_width: px;
+        --button_border_style: ;
+        --button_text_align: ;
+        --button_text_transform: ;
+        --button_letter_spacing: ;
+        --button_padding_top: px;
+        --button_padding_bottom: px;
+        --button_padding_left: px;
+        --button_padding_right: px;
+  
+        
+  
+        /* Border Color */
+        --border_widget_title : #e0e0e0;
+        --border_color_1 : #ebebeb;
+        --border_color_2: #e7e7e7;
+        --border_page_title: #eaeaea;
+        --border_input: #cbcbcb;
+        --border_checkbox: #d0d0d0;
+        --border_dropdown: #dadada;
+        --border_bt_sidebar : #f6f6f6;
+        --color_ipt: #3c3c3c;
+        --color_icon_drop: #6b6b6b;
+  
+        
+        --color_slick_arrow: #212121;
+        --color_border_slick_arrow: #505050;
+        --color_bg_slick_arrow: #ffffff;
+        
+  
+        /*color Mobile*/
+  
+        --color_menu_mb: #202020;
+        --color_menu_level3: #3c3c3c;
+  
+        /* Mixin ================= */
+        
+            --padding_btn: 14px 15px 12px !important;
+            --padding_btn_bundle: 14px 15px 12px;
+            --padding_btn_qv_add_to_cart: 14px 15px 12px;
+            --font_size_btn: var(--font_size);
+            --letter_spacing_btn: 0;
+        
+  
+        
+        
+            --color-price-box: var(--color_compare_price);
+        
+  
+        --color_review: #fac325;
+        --color_review_empty: #cccccc;
+  
+        --border-product-image: #e6e6e6;
+  
+        
+        --border-radius-17: 0;
+        --border-radius-50: 0;
+        
+      }
+  </style>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+  
+  
+  
+  
+  
+     
+  
+  
+  
+  
+  
+     
+  
+  
+  
+  
+  
+  
+  
+     
+  
+  
+  
+  
+    
+     
+    
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+    
+    
+    
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  </head>
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6186a6ab6bb0760a49416d55/1fjqvm3v4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <body data-url-lang="/cart" id="" class="template-product style_product_grid_4 layout_style_suppermarket  before-you-leave-disableMobile product_layout_supermarket" style="font-family: Arial, Helvetica, sans-serif;zoom: 1;"><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+      
+  
+      
+  
+  
+         
+      
+      
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org/",
+          "@type": "Product",
+          "name": "<%= title %>",
+          "productID": "<%= id %>",
+          "url": "https://dropitsvg.com/product/<%= id %>",
+          
+        "image": [
+              "<%= imageurl %>"
+            ],
+          
+          "description": `<%= description %>`,
+          
+          "brand": {
+            "@type": "Thing",
+            "name": "dropitsvg.com"
+          },
+          "offers": {
+            "@type": "Offer",
+            
+            "priceCurrency": "GBP",
+            "price": "<%= price %>",
+            "availability": "http://schema.org/InStock",
+            "url" : "https://dropitsvg.com/product/<%= title %>",
+            "seller": {
+              "@type": "Organization",
+              "name": "dropitsvg.com"
+            }
+          }
+        }
+        </script>
+        
+        
+
+  <div class="wrapper-header wrapper_header_supermarket wrapper_header_08 header-lang-style2 header_mobile_style_3 enable_vertical_menu">
+      <div id="shopify-section-header-08" class="shopify-section"><style>
+      /*  Header Top  */
+      
+      
+      
+      /*  Search  */
+      
+      
+      
+      
+      /*  Header Middel  */
+      
+      
+  
+      
+      
+      
+      
+      
+      /*  Header Bottom  */
+      
+      
+      
+      
+      /*  Cart  */
+      
+      
+    
+      
+  
+      .header-logo a.logo-title {
+        color: #000000;
+      }
+      
+  
+         
+      .header-top {
+          
+          background-color: ;
+          
+          color: ;
+      }
+  
+      .header-top a {
+          color: ;
+      }
+      
+      .header-top .top-message p a:hover {
+          border-bottom-color: ;
+      }
+      
+      .header-top .close:hover {
+          color: ;
+      }
+  
+      .header-top .clock-item {
+          border-color: ;
+      }
+      
+      
+      .cart-icon .cartCount {
+          background-color: #ffffff;
+          color: #fd6506;
+      }
+  
+      .enable_vertical_menu .is-sticky .cart-icon .cartCount,.enable_vertical_menu .header-mb-right .cart-icon .cartCount {
+          background-color: #fd6506;
+          color: #ffffff;
+      }
+  
+      
+      .header-supermarket .search-form .search-bar {
+          background-color: #ffffff;
+          border: 0;
+      }
+  
+      .header-supermarket .search-form .input-group-field {
+          color: #808080;
+      }
+  
+      .header-supermarket .search-form .search-bar ::-webkit-input-placeholder {
+          color: #808080;
+      }
+  
+      .header-supermarket .search-form .search-bar ::-moz-placeholder {
+          color: #808080;
+      }
+  
+      .header-supermarket .search-form .search-bar :-ms-input-placeholder {
+          color: #808080;
+      }
+  
+      .header-supermarket .search-form .search-bar :-moz-placeholder {
+          color: #808080;
+      }
+      
+      
+      .logo-img {
+          display: block;
+      }
+      
+      .logo-fixed .logo-img img,
+      .header-mb .logo-img img,
+      .header-mb .logo-title {
+          width: 120px;
+      }
+      
+      .header-pc .logo-img img {
+          width: 180px;
+      }   
+  
+      .header-bottom .header-panel-top {
+          background-color: ;       
+      }
+  
+      .header-bottom .lang-currency-groups .dropdown-label,
+      .header-bottom .header-links a,
+      .header-bottom .info-store .info-text,
+      .header-bottom .info-store .info-text a {
+          color: ;
+      }
+  
+      .header-bottom .info-store .info-icon {
+          color: ;
+      }
+  
+      .header-bottom .free-shipping-text {
+          color: #ffffff;
+      }
+  
+      .header-bottom .free-shipping-text a {
+          color: #ffffff;
+      }
+  
+      @media (max-width:767px) {
+          .search-open .wrapper-header .header-search__form {
+              background-color: #ffffff; 
+          }
+      }
+  
+      @media (min-width:1200px) {
+          
+            .wrapper_header_supermarket .search-form .search-bar {
+                border-radius: 30px;
+            }
+          
+          
+          .header-supermarket .search-form .icon-search {
+              color: #fd6506;
+          }
+  
+          .wrapper_header_supermarket .wrapper-header-bt {
+              background-color: #fd6506;
+          }
+  
+          .wrapper_header_supermarket .acc-links,
+          .wrapper_header_supermarket .giftcards,
+          .wrapper_header_supermarket .wishlist,
+          .wrapper_header_supermarket .header-cart a,
+          .wrapper_header_supermarket .text-top span {
+              color: #ffffff;
+          }
+  
+          .wrapper_header_supermarket .icon-user,
+          .wrapper_header_supermarket .giftcards svg,
+          .wrapper_header_supermarket .wishlist svg,
+          .wrapper_header_supermarket .header-cart .cart-icon {
+              color: #ffffff;
+          }
+  
+          .wrapper_header_supermarket .header-cart .cartCount {
+              background-color: #ffffff;
+              color: #fd6506;
+          }
+      }
+  </style>
+  
+  <header class="site-header header-supermarket" role="banner" style="">
+      <a href="#" class="icon-nav close-menu-mb" title="Menu Mobile Icon" data-menu-mb-toogle="">
+          <span class="icon-line"></span>
+      </a>
+  
+      <div class="header-bottom" data-sticky-mb="" style="">
+          <div class="wrapper-header-bt" style="
+     background-color: #007eff;
+ ">
+              <div class="container">
+                  <div class="header-mb header_mobile_3">          
+      <div class="header-mb-left header-mb-items">
+          <div class="hamburger-icon svg-mb">
+              <a href="#" class="icon-nav" title="Menu Mobile Icon" data-menu-mb-toogle="">
+                  <span class="icon-line"></span>
+              </a>
+          </div>
+  
+          
+  
+          
+  
+  
+      </div>
+  
+    <div class="header-mb-middle header-mb-items">
+      
+        <div class="header-logo">
+          
+          <a class="logo-img" href="/" title="Logo">
+            <img data-src="/images/logo.svg" src="/images/logo.svg" alt="" itemprop="logo" class="lazyautosizes lazyloade" data-sizes="auto" sizes="40px" style="
+     width: 40px;
+ ">
+          </a>
+          
+        </div>
+      
+    </div>
+  
+    <div class="header-mb-right header-mb-items">
+      
+        
+          <div class="search-mb svg-mb">
+              <a href="#" title="Search Icon" class="icon-search" data-search-mobile-toggle="">
+                  <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+              </a>
+  
+              <a href="javascript:void(0)" title="close" class="close close-search">
+                  <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+              </a>
+          
+              <div class="search-form" data-ajax-search="">
+      <div class="header-search">
+          <div class="header-search__form">
+              <a href="javascript:void(0)" title="close" class="close close-search">
+                  <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+              </a>
+              <form action="/search" method="get" class="search-bar" role="search">
+                  <input type="hidden" name="type" value="product">
+                      <input type="search" name="q" placeholder="Search" class="input-group-field header-search__input" aria-label="Search Site" autocomplete="off">
+                  <button type="submit" class="btn icon-search">
+                      <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                  </button>
+                  
+                  <a href="javascript:void(0)" title="close" class="close close-search close-search-style-3" style="display: none;">
+                      <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                  </a>
+                  
+              </form>       
+          </div>
+  
+          <div class="quickSearchResultsWrap" style="display: none;">
+              <div class="custom-scrollbar">
+                  <div class="container">
+                      
+                      <div class="header-block header-search__trending">
+                          <div class="box-title">
+                              
+  <span>
+    Top searches
+  </span>
+  
+                          </div>
+  
+                          <ul class="list-item">
+                              
+                              
+                              
+  
+                              <li class="item">
+                                  <a href="/search?q=sample*&amp;type=product" title="" class="highlight">
+                                      
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                          
+  <span>
+    sample
+  </span>
+  
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+  
+                              <li class="item">
+                                  <a href="/search?q=dempus*&amp;type=product" title="" class="highlight">
+                                      
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                          
+  <span>
+    dempus
+  </span>
+  
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=lorem*&amp;type=product" title="" class="highlight">
+                                      
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                          
+  <span>
+    lorem
+  </span>
+  
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=loremous-saliduar*&amp;type=product" title="" class="highlight">
+                                      
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                          
+  <span>
+    loremous saliduar
+  </span>
+  
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=women-shirt*&amp;type=product" title="" class="highlight">
+                                      
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                          
+  <span>
+    women shirt
+  </span>
+  
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=accessories*&amp;type=product" title="" class="highlight">
+                                      
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                          
+  <span>
+    accessories
+  </span>
+  
+                                      
+                                  </a>
+                              </li>
+                              
+                          </ul>
+                      </div>
+                      
+  
+                      
+                      <div class="header-block header-search__product">
+                          
+  
+                          
+                      </div>
+                      
+                      
+                      <div class="header-search__results-wrapper"></div>          
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+       
+  
+      <script id="search-results-template" type="text/template7">
+          
+          {{#if is_loading}}
+          <div class="header-search__results">
+              <div class="header-search__spinner-container">
+                  <div class="loading-modal modal"><div></div><div></div><div></div><div></div></div>
+              </div>
+          </div>
+  
+          {{else}}
+  
+          {{#if is_show}}
+          <div class="header-search__results header-block">
+              
+              {{#if has_results}}
+              <div class="box-title">
+                  {{ title_heading }}
+              </div>
+  
+              <div class="search__products">
+                  <div class="products-grid row">
+                      {{#each results}}
+  
+                      <div class="grid-item col-6 col-sm-4  col-5">
+                          <div class="inner product-item">
+                              <div class="inner-top">
+                                  <div class="">
+                                      <div class="product-image">
+                                          <a href="{{url}}" class="product-grid-image">
+                                              <img src="{{image}}" alt="{{image_alt}}">                                               
+                                          </a>
+                                      </div>
+                                  </div>
+  
+                                  <div class="product-bottom">
+  
+                                      
+  
+                                      <a class="product-title" href="{{url}}">
+                                          {{title}}
+                                      </a>
+  
+                                      <div class="price-box">
+                                          {{#if on_sale}}
+                                          <div class="price-sale">
+                                              <span class="old-price">{{ compare_at_price }}</span>
+                                              <span class="special-price">
+                                                  {{ price }}
+                                              </span>
+                                          </div>
+                                          {{else}}
+                                          <div class="price-regular">
+                                              <span>{{ price }}</span>
+                                          </div>
+                                          {{/if}}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      {{/each}}
+                  </div>              
+              </div>
+              
+              <div class="text-center">            
+                  <a href="{{results_url}}" class="text-results header-search__see-more" data-results-count="{{results_count}}">
+                      {{results_label}} ({{results_count}})
+                  </a>
+              </div>
+              {{else}}
+  
+              <p class="header-search__no-results text-results">{{ results_label }}</p>
+              {{/if}}
+              
+          </div>
+          {{/if}}
+          {{/if}}
+      
+      </script>
+  </div>
+          </div>  
+        
+      
+  
+      
+  
+      <div class="cart-icon svg-mb">
+        <a href="#" onclick="cartshowing()"  title="Cart Icon" data-cart-toggle="">
+          
+            
+  <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <path class="path1" d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4S512 865.136 512 921.6 466.064 1024 409.6 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
+      <path class="path2" d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4S711.536 819.2 768 819.2s102.4 45.936 102.4 102.4S824.464 1024 768 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
+      <path class="path3" d="M898.021 228.688C885.162 213.507 865.763 204.8 844.8 204.8H217.954l-5.085-30.506C206.149 133.979 168.871 102.4 128 102.4H76.8c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6H128c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395C254.65 736.421 291.929 768 332.799 768h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zm-35.69 48.006l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"></path>
+  </svg>
+  
+  
+               
+          <span class="cartCount" data-cart-count="">
+            0
+          </span>
+        </a>
+      </div>
+  
+    </div>          
+  </div>
+              </div>
+          
+              <div class="header-pc">
+                  <div class="header-panel-bt header-text-left">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-12 col-xl-3 wrapper-left header-items">
+                                  <div class="header-logo" itemscope="" itemtype="http://schema.org/Organization">
+                                    <meta itemprop="url" content="https://.myshopify.com">
+                                      
+                                      <a class="logo-img" href="/" title="Logo">
+                                      <img itemprop="logo" src="/images/logo.svg" alt="" class="lazyautosizes lazyloaded" data-sizes="auto" sizes="100px" style="
+     width: 50px;
+ ">
+                                      </a>
+                                      
+                                  </div>
+                                  
+                                      
+                                          
+                                      
+                                  
+                              </div>
+  
+                              <div class="col-12 col-xl-5 wrapper-center header-items">
+                                  
+                                  <div class="nav-search">                    
+                                      <div class="search-form" data-ajax-search="">
+      <div class="header-search">
+          <div class="header-search__form">
+              <form action="/search" method="get" class="search-bar" role="search">
+                  <input type="hidden" name="type" value="product">
+                      <input type="search" name="q" placeholder="Search the store" class="input-group-field header-search__input ajax-loaded" aria-label="Search Site" autocomplete="off" data-search-mobile-toggle="" data-url="collection-skin-supermarket-6" data-limit="6">
+                  <button type="submit" class="btn icon-search">
+                      <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                  </button>
+              </form>       
+          </div>
+  
+          <div class="quickSearchResultsWrap" style="display: none;">
+              <div class="custom-scrollbar">
+                  <div class="container">
+                      
+                      <div class="header-block header-search__trending">
+                          <div class="box-title">
+                              
+  <span>
+    Top searches
+  </span>
+  
+                          </div>
+  
+                          <ul class="list-item">
+                              
+                              
+                              
+  
+                              <li class="item">
+                                  <a href="/search?q=sample*&amp;type=product" title="" class="highlight">
+                                      
+  <span>
+    sample
+  </span>
+  
+                                      
+                                          <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+  
+                              <li class="item">
+                                  <a href="/search?q=dempus*&amp;type=product" title="" class="highlight">
+                                      
+  <span>
+    dempus
+  </span>
+  
+                                      
+                                          <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=lorem*&amp;type=product" title="" class="highlight">
+                                      
+  <span>
+    lorem
+  </span>
+  
+                                      
+                                          <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=loremous-saliduar*&amp;type=product" title="" class="highlight">
+                                      
+  <span>
+    loremous saliduar
+  </span>
+  
+                                      
+                                          <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=women-shirt*&amp;type=product" title="" class="highlight">
+                                      
+  <span>
+    women shirt
+  </span>
+  
+                                      
+                                          <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                                      
+                                  </a>
+                              </li>
+                              
+  
+                              
+  
+                              
+                              <li class="item">
+                                  <a href="/search?q=accessories*&amp;type=product" title="" class="highlight">
+                                      
+  <span>
+    accessories
+  </span>
+  
+                                      
+                                          <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+                                      
+                                  </a>
+                              </li>
+                              
+                          </ul>
+                      </div>
+                      
+  
+                      
+                      
+                      
+                      
+                      <div class="header-search__results-wrapper"></div>          
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+       
+  
+      <script id="search-results-template" type="text/template7">
+          
+          {{#if is_loading}}
+          <div class="header-search__results">
+              <div class="header-search__spinner-container">
+                  <div class="loading-modal modal"><div></div><div></div><div></div><div></div></div>
+              </div>
+          </div>
+  
+          {{else}}
+  
+          {{#if is_show}}
+          <div class="header-search__results header-block">
+              
+              {{#if has_results}}
+              <div class="box-title">
+                  {{ title_heading }}
+              </div>
+  
+              <div class="search__products">
+                  <div class="products-grid row">
+                      {{#each results}}
+  
+                      <div class="grid-item col-6 col-sm-3">
+                          <div class="inner product-item">
+                              <div class="inner-top">
+                                  <div class="">
+                                      <div class="product-image">
+                                          <a href="{{url}}" class="product-grid-image">
+                                              <img src="{{image}}" alt="{{image_alt}}">                                               
+                                          </a>
+                                      </div>
+                                  </div>
+  
+                                  <div class="product-bottom">
+                                      
+  
+                                      <a class="product-title" href="{{url}}">
+                                          {{title}}
+                                      </a>
+  
+                                      <div class="price-box">
+                                          {{#if on_sale}}
+                                          <div class="price-sale">
+                                              <span class="old-price">{{ compare_at_price }}</span>
+                                              <span class="special-price">
+                                                  {{ price }}
+                                              </span>
+                                          </div>
+                                          {{else}}
+                                          <div class="price-regular">
+                                              <span>{{ price }}</span>
+                                          </div>
+                                          {{/if}}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      {{/each}}
+                  </div>              
+              </div>
+              
+              <div class="text-center">            
+                  <a href="{{results_url}}" class="text-results header-search__see-more" data-results-count="{{results_count}}">
+                      {{results_label}} ({{results_count}})
+                  </a>
+              </div>
+              {{else}}
+  
+              <p class="header-search__no-results text-results">{{ results_label }}</p>
+              {{/if}}
+              
+          </div>
+          {{/if}}
+          {{/if}}
+      
+      </script>
+  </div> 
+                                  </div>
+                                   
+                              </div>
+  
+                              <div class="col-12 col-xl-4 wrapper-right header-items ">
+                                  
+  
+                                  <div class="append-mb" data-links-menu-mobile="">
+                                                            
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      <div class="customer-links">
+                                          <a href="#" title="User Icon" class="icon-user" data-user-mobile-toggle="">
+                                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="lnr-user" viewBox="0 0 1024 1024" width="100%" height="100%"><title>user</title><path class="path1" d="M486.4 563.2c-155.275 0-281.6-126.325-281.6-281.6s126.325-281.6 281.6-281.6 281.6 126.325 281.6 281.6-126.325 281.6-281.6 281.6zM486.4 51.2c-127.043 0-230.4 103.357-230.4 230.4s103.357 230.4 230.4 230.4c127.042 0 230.4-103.357 230.4-230.4s-103.358-230.4-230.4-230.4z"></path><path class="path2" d="M896 1024h-819.2c-42.347 0-76.8-34.451-76.8-76.8 0-3.485 0.712-86.285 62.72-168.96 36.094-48.126 85.514-86.36 146.883-113.634 74.957-33.314 168.085-50.206 276.797-50.206 108.71 0 201.838 16.893 276.797 50.206 61.37 27.275 110.789 65.507 146.883 113.634 62.008 82.675 62.72 165.475 62.72 168.96 0 42.349-34.451 76.8-76.8 76.8zM486.4 665.6c-178.52 0-310.267 48.789-381 141.093-53.011 69.174-54.195 139.904-54.2 140.61 0 14.013 11.485 25.498 25.6 25.498h819.2c14.115 0 25.6-11.485 25.6-25.6-0.006-0.603-1.189-71.333-54.198-140.507-70.734-92.304-202.483-141.093-381.002-141.093z"></path></svg>
+                                          </a>
+                                          <div class="user-text ">
+                                                
+                                              <div class="text-top">
+                                                  <a data-dropdown-user="" data-user-mobile-toggle="" class="acc-links acc-sign-in sign_in_md" id="customer_login_link" href="#">
+                                                      Sign In
+                                                  </a>
+                                                   <a data-dropdown-user="" class="acc-links acc-sign-in sign_in_mb" id="customer_login_link" href="/account/login">
+                                                      Sign In
+                                                  </a>
+                                              </div>
+                                               
+                                          </div>
+                                      </div>
+                                      
+                                  </div><div class="header-cart style_2" data-cart-header-supermarket="">
+                                      <a href="#" title="Cart"onclick="cartshowing()" data-cart-toggle="">
+                                          <span class="cart-icon">
+                                              
+  <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <path class="path1" d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4S512 865.136 512 921.6 466.064 1024 409.6 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
+      <path class="path2" d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4S711.536 819.2 768 819.2s102.4 45.936 102.4 102.4S824.464 1024 768 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
+      <path class="path3" d="M898.021 228.688C885.162 213.507 865.763 204.8 844.8 204.8H217.954l-5.085-30.506C206.149 133.979 168.871 102.4 128 102.4H76.8c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6H128c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395C254.65 736.421 291.929 768 332.799 768h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zm-35.69 48.006l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"></path>
+  </svg>
+  
+  
+                                          </span>
+  
+                                          <span class="groups-cart-text">  
+                                              <span class="cartCount" data-cart-count="">
+                                                  0
+                                              </span>
+  
+                                              <span class="cart-text">
+                                                  Cart
+                                              </span>
+                                          </span>
+                                      </a>                    
+                                  </div>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  
+  <script>
+      
+      var appendPrependMenuMobile = function() {
+          var headerPC =  $('.wrapper-header .header-pc'),
+              customerLinks = headerPC.find('[data-links-menu-mobile]'),
+              headerPanelTop = headerPC.find('.header-panel-top'),
+              wrapperNav = $('.wrapper-navigation'),
+              areaMb = wrapperNav.find('.mb-area');
+  
+          if (window.innerWidth < 1200) {
+              if(customerLinks.length) {
+                  customerLinks.appendTo(areaMb);
+              };
+  
+              if(headerPanelTop.length) {
+                  headerPanelTop.appendTo(areaMb);
+              };
+          } else {      
+              $('[data-links-menu-mobile]').insertBefore(headerPC.find('[data-cart-header-supermarket]'));
+              
+              if(headerPanelTop.length) {
+                  headerPC.prepend(headerPanelTop);
+              };
+          };
+      };
+  
+      $(document).ready(function() {
+          appendPrependMenuMobile();
+      });
+  
+      var winWidth = $(window).innerWidth();
+  
+      $(window).on('resize', function () {
+          var resizeTimerId;
+  
+          clearTimeout(resizeTimerId);
+  
+          resizeTimerId = setTimeout(function() {
+              var curWinWidth = $(window).innerWidth();
+  
+              if ((curWinWidth < 1200 && winWidth >= 1200) || (curWinWidth >= 1200 && winWidth < 1200)) {
+                  appendPrependMenuMobile();
+              };
+              winWidth = curWinWidth;
+          }, 0);
+      });
+      
+  
+      
+      
+  </script>
+  
+  </div>
+      <div id="shopify-section-navigation-08" class="shopify-section" style="height: 52px;"><style>
+      
+      
+      
+      
+      
+      /*  Menu Lv 1  */
+      
+      
+      
+      
+      /*  Menu Lv 2  */
+      
+      
+      
+      
+      /*  Menu Lv 3  */
+      
+      
+      
+      
+      /*  Label - Navigation  */
+      
+      
+      
+      
+      
+      
+  
+      .nav-vertical .social-icons a {
+          color: #202020;
+      }
+  
+      .nav-vertical .header-logo img {
+          width: ;
+      }
+  
+      @media (min-width:1200px) {
+          .navigation-vertical-menu,
+          .wrapper-navigation,
+          .main-menu,
+          .vertical-menu .nav-bar {
+              background-color: #ffffff;
+          }
+  
+          .navigation-08 .site-nav .mega-menu .sub-menu-mobile {
+              background-color: #ffffff;
+          }
+          
+          .site-nav .sub-menu-mobile,
+          .site-nav .sub-menu-mobile .bg {
+              background-color: #ffffff;
+          }
+          
+          .wrapper-navigation .main-menu {
+              text-align: ;
+          }
+          
+          /*  Menu Lv 1  */
+          .has_sticky .wrapper_header_default .wrapper-top-cart .cart-icon svg,
+          .wrapper-navigation .fixed-right-menu a,
+          .wrapper-navigation .site-nav .menu-lv-1 > a,
+          .wrapper_header_supermarket .vertical-menu .menu-lv-1.dropdown>a:after {
+              color: #202020;
+          }
+  
+                  
+          .is-sticky .wrapper-navigation .fixed-right-menu .search-fixed,
+          .is-sticky .wrapper-navigation .fixed-right-menu .cart-fixed {
+              border-left-color: rgba(32, 32, 32, 0.15);
+          }
+  
+          
+          
+          .site-nav .menu-lv-1 > a:hover {
+              color: #202020;
+          }
+          
+          .site-nav .menu-lv-1>a span:before {
+              background-color: #202020;
+          }
+          
+          /*  Menu Lv 2  */
+          .site-nav .menu-lv-2>a,
+          .site-nav .mega-menu .mega-banner .title,
+          .site-nav .mega-menu .product-item .btn {
+              color: #202020;
+          }
+          
+          .site-nav .mega-menu .product-item .btn {
+              border-bottom-color: rgba(32, 32, 32, 0.7);
+          }
+          
+          .site-nav .menu-lv-2 > a:hover {
+              color: #e10600;
+          }
+  
+          .navigation-08 .site-nav .no-mega-menu li > a span:before, .navigation-08 .site-nav .no-mega-menu .dropdown > a span:before {
+              background-color: #0a6cdc;
+          }
+  
+          .navigation-08 .site-nav .no-mega-menu li:hover, .navigation-08 .site-nav .no-mega-menu .dropdown:hover {
+              background-color: #f5f5f5
+          }
+          
+          /*  Menu Lv 3  */
+          .site-nav .menu-lv-3 > a,
+          .site-nav .no-mega-menu .menu-lv-2 > a{
+              color: #505050;
+          }
+          
+          .site-nav .menu-lv-3 > a:hover,
+          .site-nav .no-mega-menu .menu-lv-2 > a:hover {
+              color: #0a6cdc;
+          }
+          
+          .site-nav .menu-lv-3 > a span:before {
+              background-color: #0a6cdc;
+          }
+          
+          .site-nav .icon_sale:before {
+              border-top-color: #ef6454;
+          }
+  
+          .site-nav .icon_new:before {
+              border-top-color: #06bfe2;
+          }
+  
+          .site-nav .icon_hot:before {
+              border-top-color: #ffbb49;
+          }
+  
+          .site-nav .menu-lv-1 > a,
+          .site-nav .menu-mb-title {
+              font-size: 16px; 
+          }
+          
+          .site-nav .menu-lv-2 > a,
+          .site-nav .mega-menu .mega-banner .title,
+          .site-nav .mega-menu .product-item .btn {
+              font-size: 16px;    
+          }
+          
+          .site-nav .menu-lv-3 > a {
+              font-size: 14px;    
+          }
+  
+          .site-nav .no-mega-menu .menu-lv-2 > a {
+              font-size: 14px;
+          }  
+  
+      }
+    
+      .site-nav .icon_sale {
+          background-color: #ef6454;
+          color: #ffffff;
+      }
+          
+      .site-nav .icon_new {
+          background-color: #06bfe2;
+          color: #ffffff;
+      }
+          
+      .site-nav .icon_hot {
+          background-color: #ffbb49;
+          color: #ffffff;
+      }
+  
+      .site-nav .mega-menu .style_5 .skin-2 .azbrandstable .vendor-letter-menu a, .site-nav .mega-menu .style_5 .mega-banner.skin-2 .col-right .link-brands {
+          color: #202020;
+      }
+     
+      @media (max-width:1199px) {
+          .site-nav .icon_sale:before {
+              border-right-color: #ef6454;
+          }
+  
+          .site-nav .icon_new:before {
+              border-right-color: #06bfe2;
+          }
+  
+          .site-nav .icon_hot:before {
+              border-right-color: #ffbb49;
+          }
+      }
+  </style>
+  
+  <div id="sticky-wrapper" class="sticky-wrapper" style="height: 52px;"><div class="wrapper-navigation navigation-08" data-sticky-pc="" style="">
+      
+      <div class="header-logo logo-fixed">
+          <a class="logo-img" href="/" title="Logo">
+              <img data-src="/images/logo.svg" src="/images/logo.svg" alt="" itemprop="logo" class="lazyautosizes lazyloaded" data-sizes="auto" sizes="1583px">
+          </a>
+      </div>
+      
+      
+      <div class="main-menu jas-mb-style" style="">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                     <div class="header-panel-bt">
+                        
+                        <div class="wrapper-left">                        
+                            <div class="vertical-menu">
+                                <div class="categories-title">
+                                    <a href="#" class="icon-nav">
+                                       <svg viewBox="0 0 26 26" class="icon icon-grid" id="icon-grid">
+     <g><g><g>
+     <circle cx="13" cy="13" width="5" height="5" r="4"></circle>
+     <rect x="12" y="12" width="2" height="2" fill="#fff"></rect>
+     <circle cx="4" cy="4" width="5" height="5" r="4"></circle>
+     <rect x="3" y="3" width="2" height="2" fill="#fff"></rect>
+     <circle cx="13" cy="22" width="5" height="5" r="4"></circle>
+     <rect x="12" y="21" width="2" height="2" fill="#fff"></rect>
+     <circle cx="4" cy="13" width="5" height="5" r="4"></circle>
+     <rect x="3" y="12" width="2" height="2" fill="#fff"></rect>
+     <circle cx="4" cy="22" width="5" height="5" r="4"></circle>
+     <rect x="3" y="21" width="2" height="2" fill="#fff"></rect>
+     <circle cx="22" cy="4" width="5" height="5" r="4"></circle>
+     <rect x="21" y="3" width="2" height="2" fill="#fff"></rect>
+     <circle cx="13" cy="4" width="5" height="5" r="4"></circle>
+     <rect x="12" y="3" width="2" height="2" fill="#fff"></rect>
+     <circle cx="22" cy="13" width="5" height="5" r="4"></circle>
+     <rect x="21" y="12" width="2" height="2" fill="#fff"></rect>
+     <circle cx="22" cy="22" width="5" height="5" r="4"></circle>
+     <rect x="21" y="21" width="2" height="2" fill="#fff"></rect>
+     </g></g>
+     </g>
+  </svg>
+                                    </a>
+  
+                                    
+                                    <h3 class="title">
+                                        
+  <span>
+    Categories
+  </span>
+                                 
+                                    </h3>
+                                    
+                                    
+                                </div>
+  
+                                <nav class="nav-bar" role="navigation">
+                                    
+  
+  <ul class="site-nav">
+      
+  
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+      
+      
+        
+  
+       
+  
+      
+      
+  <li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/1">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Anime</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Anime &amp; Manga</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=naruto">
+                  
+  <span>Naruto</span>
+  
+  
+                  
+             
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/naruto.jpg" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=attack on titan">
+                  
+  <span>Attack On Titan</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/attack.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=dragon ball z">
+                  
+  <span>Dragon Ball Z</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/dragonball.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=my hero acadimia">
+                  
+  <span>My Hero Academia</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/myhero.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Sailor Moon">
+                  
+  <span>Sailor Moon</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/sailormoon.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=one piece">
+                  
+  <span>one piece
+ </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/onepiece.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=lady bag">
+                  
+  <span>Ladybag &amp; Cat Noir
+ </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/catnoir.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/2">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Cartoon </span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Cartoon &amp; Kids</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=baby boss">
+                  
+  <span>Baby boss</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/babyboos.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=care bears">
+                  
+  <span>Care Bears</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/carebears.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=bluey">
+                  
+  <span>Bluey Word</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/bluey.jpg" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Bratz">
+                  
+  <span>Bratz</span>
+ <br>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Bratz.png" style="
+     max-width: 50%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=cars">
+                  
+  <span>Cars</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/cars.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=cocomelon">
+                  
+  <span>cocomelon</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/cocomelon.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Frozen">
+                  
+  <span>Frozen</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Frozen.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Garfield">
+                  
+  <span>Garfield</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Garfield.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Lilo And Stitch">
+                  
+  <span>Lilo And Stitch</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/LiloAndStitch.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Little Mermaid">
+                  
+  <span>Little Mermaid</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/LittleMermaid.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Mickey Mouse">
+                  
+  <span>Mickey Mouse</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/MickeyMouse.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Ninja Turtles">
+                  
+  <span>Ninja Turtles</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/NinjaTurtles.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Paw Patrol">
+                  
+  <span>Paw Patrol</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/PawPatrol.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=PJ Masks">
+                  
+  <span>PJ Masks</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/PJMasks.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Rainbow Brite">
+                  
+  <span>Rainbow Brite</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/RainbowBrite.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Pokemon">
+                  
+  <span>Pokemon</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Pokemon.png" style="
+     max-width: 80%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Rugrats">
+                  
+  <span>Rugrats</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Rugrats.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Space Jam">
+                  
+  <span>Space Jam</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/SpaceJam.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Sponge Bob">
+                  
+  <span>Sponge Bob</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/SpongeBob.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Superheroes">
+                  
+  <span>Superheroes</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Superheroes.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/3">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Gaming</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Games And Arcades</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=among us">
+                  
+  <span>Among Us</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/amongus.png" style="
+     max-width: 80%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Apex Legends
+ ">
+                  
+  <span>Apex Legends
+ 
+ </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/ApexLegends.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Fortnite">
+                  
+  <span>Fortnite </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Fortnite.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Minecraft">
+                  
+  <span>Minecraft </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Minecraft.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=pubg">
+                  
+  <span>pubg</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/pubg.png" style="
+     max-width: 90%;
+     max-height: 20%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Roblox">
+                  
+  <span>Roblox</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Roblox.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Valorant">
+                  
+  <span>Valorant</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Valorant.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/4">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Movies</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Movies &amp; TV Shows</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=spiderman">
+                  
+  <span>Spider man</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/spiderman.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=harry potter">
+                  
+  <span>harry potter</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/harrypotter.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Joker">
+                  
+  <span>Joker</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Joker.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=batman">
+                  
+  <span>batman</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/batman.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Star Wars">
+                  
+  <span> Star Wars</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/StarWars.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=squid game">
+                  
+  <span>squid game</span><br>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/squidgame.png" style="
+     max-width: 50%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/5">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Social Media</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Social Media &amp; Softwares</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=tiktok">
+                  
+  <span>tiktok</span><br>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/tiktok.png" style="
+     max-width: 50%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=facebook">
+                  
+  <span>facebook</span><br>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/fb.png" style="
+     max-width: 50%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=youtube">
+                  
+  <span>youtube</span><br>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/yt.png" style="
+     max-width: 50%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Instagram">
+                  
+  <span>Instagram</span><br>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/insta.png" style="
+     max-width: 50%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/6">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Sport</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Sport &amp; Teams</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=football">
+                  
+  <span>FootBall</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" srcset="/images/football.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=BASKETBALL">
+                  
+  <span>BASKETBALL</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/BASKETBALL.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=BASEBALL">
+                  
+  <span>BASEBALL</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/BASEBALL.png" style="
+     max-width: 80%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=nike">
+                  
+  <span>nike</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/nike.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Adidas">
+                  
+  <span>Adidas</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/Adidas.png" style="
+     max-width: 80%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/7">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>Special Events</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Special Events &amp; HoliDays</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=halloween">
+                  
+  <span>halloween</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/halloween.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=THANKS GIVING">
+                  
+  <span>THANKS GIVING
+ 
+ </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/THANKSGIVING.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=CHRISTMAS">
+                  
+  <span>CHRISTMAS</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/CHRISTMAS.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=NEW YEAR">
+                  
+  <span>NEW YEAR</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/NEWYEAR.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=EASTER">
+                  
+  <span>EASTER</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/EASTER.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div><div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=womens day">
+                  
+  <span>March Happy Women's Day</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/womenday.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li><li class="menu-lv-1 item dropdown mega-menu">
+          <a class="menu__moblie " href="/category/8">
+              
+  
+              <span class="icon-img">
+                  <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/home-furniture.png?v=8710914515582383192" alt="Home, Furniture" onerror="style.display = 'none';">
+              </span>
+  
+              
+  <span>More</span>
+  
+              
+              
+              <span class="icon-dropdown" data-toggle-menu-mb="">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+                        
+          </a> 	    
+  
+          
+          <div class="sub-menu-mobile menu-mb-translate">
+              <div class="bg">
+                  <div class="menu-mb-title">
+                      <span class="icon-dropdown">
+                          <i class="fa fa-angle-left" aria-hidden="true"></i>
+                      </span>
+                      
+  <span>Emojis &amp;Icons</span>
+  
+                  </div>
+              
+              
+              
+                  
+                  
+                    
+                  <div class="site-nav-dropdown style_3">
+                      <div class="container">
+                          <div class="row">
+      
+          
+          
+          <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=Emojis">
+                  
+  <span>Emojis </span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/imoji.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+  <div class="menu-lv-2 col-12 col5 inner dropdown">
+              <!-- Menu level 2 -->
+              <a href="/search?q=banners">
+                  
+  <span>Banners</span>
+  
+  
+                  
+                  
+                  
+            
+  
+              
+                      
+                    
+                              <img alt="" data-img="" sizes="192px" srcset="/images/banner.png" style="
+     max-width: 90%;
+ ">
+                      
+                  
+  
+              
+              
+               </a>
+          </div></div>
+  
+                      </div>        
+                  </div>
+  
+                  
+  
+              </div>
+          </div>    
+      </li></ul>
+  
+                                </nav>    
+                            </div>
+                        </div>
+                        
+  
+                        
+  
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      
+      <div class="fixed-right-menu">
+          <div class="search-fixed">
+              <a href="#" title="Search Icon" class="icon-search" data-search-mobile-toggle="">
+                  <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
+      <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+  </svg>
+              </a>
+              <a href="javascript:void(0)" title="close" class="close close-search">
+                 <svg viewBox="0 0 48 48" width="100%" height="100%"><path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path></svg>
+             </a>
+          </div>
+     
+          <div class="cart-fixed cart-icon" data-cart-header-02="">             
+              <a href="javascript:void(0)" title="Cart Icon" data-cart-toggle="">
+                  
+  <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <path class="path1" d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4S512 865.136 512 921.6 466.064 1024 409.6 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
+      <path class="path2" d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4S711.536 819.2 768 819.2s102.4 45.936 102.4 102.4S824.464 1024 768 1024zm0-153.6c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"></path>
+      <path class="path3" d="M898.021 228.688C885.162 213.507 865.763 204.8 844.8 204.8H217.954l-5.085-30.506C206.149 133.979 168.871 102.4 128 102.4H76.8c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6H128c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395C254.65 736.421 291.929 768 332.799 768h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zm-35.69 48.006l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"></path>
+  </svg>
+  
+  
+                  <span class="cartCount" data-cart-count="">
+                      0
+                  </span>
+              </a>
+          </div>
+      </div>
+      
+  </div></div>
+  
+  <style>
+  @media (min-width:1200px) {
+      
+  
+      .site-nav .mega-menu .style_5 .mega-banner {
+         background-color: #ffffff;
+      }
+      .site-nav .mega-menu .style_5 .mega-banner .col-left:before, .site-nav .mega-menu .style_5 .mega-banner .col-right:after,.site-nav .mega-menu .style_5 .mega-banner.skin-2:after {
+         background-color: #ffffff;
+      }
+      .site-nav .mega-menu .style_5 .mega-banner.skin-2:before {
+         background-color: #ffffff;
+      }
+      .site-nav .mega-menu .style_5 .mega-banner.skin-3.skin-3-product, .site-nav .mega-menu .style_5 .mega-banner.skin-3.skin-3-product:before, .site-nav .mega-menu .style_5 .mega-banner.skin-3.skin-3-product:after {
+         background-color: #ffffff !important;
+      }
+      .site-nav .mega-menu .style_5 .mega-banner.skin-3 .col-product .slick-arrow {
+         background: #8c8c8c;
+         border: #8c8c8c;
+      }
+      .site-nav .mega-menu .style_5 .mega-banner.skin-3 .col-product .slick-arrow svg {
+         color: #ffffff;
+      }
+  
+      .navigation-08 .header-bottom-right .help-item:before {
+         background-color: #dedede;
+      }
+      .navigation-08 .lang-currency-groups .currency-block+.lang-block:before {
+         color: #202020;
+      }
+      .wrapper_header_08.enable_vertical_menu .vertical-menu .menu-lv-1:hover {
+         background-color: #fd6506;
+      }
+      .wrapper_header_08.enable_vertical_menu .vertical-menu .menu-lv-1:hover > a {
+         color: #ffffff;
+      }
+      .wrapper_header_08.enable_vertical_menu .vertical-menu .menu-lv-1:hover .icon-img img {
+         filter: invert(1);
+      }
+      .wrapper_header_08.enable_vertical_menu .vertical-menu .menu-lv-1.dropdown:hover > a:after {
+         font: normal normal normal 16px/1 FontAwesome;
+         opacity: 1;
+         color: #ffffff;
+      }
+  }
+  .navigation-08 .header-bottom-right .help-item a {
+     color: #202020;
+  }
+  .navigation-08 .header-bottom-right .help-item a svg {
+     color: #fd6506;
+  }
+  .navigation-08 .lang-currency-groups .dropdown-label .text {
+     color: #202020;
+  }
+  .navigation-08 .lang-currency-groups .dropdown-toggle:after {
+     color: #202020;
+  }
+  .wrapper_header_08.enable_vertical_menu .vertical-menu .categories-title .title, .wrapper_header_08.enable_vertical_menu .vertical-menu .categories-title .title:before {
+     color: #232323;
+  }
+  .wrapper_header_08.enable_vertical_menu .vertical-menu .categories-title:before {
+     background-color: #dedede;
+  }
+  .wrapper_header_08.enable_vertical_menu .vertical-menu .categories-title .icon-nav svg {
+     color: #fd6506;
+     fill: #fd6506;
+  }
+  </style>
+  
+  <script>
+      window.fixtop_menu = true;
+      
+         $('.wrapper_header_08').addClass('enable_vertical_menu');
+      
+  </script>
+  
+  
+  </div>
+  </div>
+  
+     
+  
+          
+  
+      
+     
+  
+      <div class="wrapper-container wrapper-body">	
+          
+  
+          
+  
+          
+                
+              
+  
+          
+          
+    <div class="wrapper-container wrapper-body">	
+        <main class="main-content" role="main">      
+            <div id="shopify-section-template--14133958541363__main" class="shopify-section">
+
+
+  
+    <div class="product-template product-template-supermarket product-template-2-blocks">
+  <div class="container">
+    
+
+
+
+
+<div class="breadcrumb layout-breadcrumb--skin1">
+  
+  <a href="/" data-translate="general.breadcrumbs.home">Home</a>  
+   
+  
+    
+      <span class="arrow">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </span>
+
+      
+      
+        
+        <span><a href="/category/<%= category_id %>" title=""><%= category %></a></span>
+        
+      
+    
+  
+    <span class="arrow">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </span>
+      
+      <span><%= title_mini %></span>
+    
+  
+  
+  
+</div>
+
+
+    <div class="halo-product-content">
+      <div class="row pro-page">
+        <div id="shopify-section-product-template-suppermarket" class="shopify-section col-12">
+  <div data-section-id="template--14133958541363__main" data-section-type="product" id="ProductSection-template--14133958541363__main" data-enable-history-state="true" data-collections-related="/collections/collection-skin-supermarket-2?view=related">
+      <div class="product product-default">
+
+          <div class="row product_top horizontal-tabs">
+              <div class="col-md-6 product-photos" data-more-view-product="">
+                  <div class="product-img-box horizontal-moreview">
+                      <div style="position: relative;" class="wrapper-images">
+                          <div>
+                              
+                              
+                                
+                              
+                              
+                              
+                                
+                              
+                              
+                              
+                                
+                              
+                              
+                              
+                                
+                              
+                              
+                              
+                                
+                              
+                              
+                          <div aria-live="polite" class=""><div role="listbox">
+
+<a class=""  data-fancybox="images" tabindex="0" style="width: 30%;position: relative;overflow: hidden;">
+                                      <img id="product-featured-image-20223196921907" src="<%= imageurl %>" alt="Laptop Unde Tele Ona pharetras praneu homuir" data-sizes="auto" sizes="870px">
+                                  </a>
+
+</div></div></div>
+
+                          
+                        
+  
+  <div class="product-label" data-label-new-number="5">
+    
+
+    
+    
+    
+    <strong class="label new-label">
+      New
+    </strong>
+    <br>
+    
+    
+    
+    
+    
+  </div>
+  
+
+
+
+
+
+
+                          
+                       
+                          
+                      </div>
+
+                      
+                  </div>
+                  
+                    <div class="theme-ask">
+                        
+                    </div>
+                  
+              </div>
+
+              <div class="col-md-6 product-shop">
+                  <div class="group-title has-next_prev">
+                    <h1 class="product-title">
+                        
+<span>
+ <%= title %>
+</span>
+
+                    </h1>
+                    
+                    <a class="icon-share" href="javascript:void(0)"><svg viewBox="0 0 227.216 227.216"> <path d="M175.897,141.476c-13.249,0-25.11,6.044-32.98,15.518l-51.194-29.066c1.592-4.48,2.467-9.297,2.467-14.317 c0-5.019-0.875-9.836-2.467-14.316l51.19-29.073c7.869,9.477,19.732,15.523,32.982,15.523c23.634,0,42.862-19.235,42.862-42.879 C218.759,19.229,199.531,0,175.897,0C152.26,0,133.03,19.229,133.03,42.865c0,5.02,0.874,9.838,2.467,14.319L84.304,86.258 c-7.869-9.472-19.729-15.514-32.975-15.514c-23.64,0-42.873,19.229-42.873,42.866c0,23.636,19.233,42.865,42.873,42.865 c13.246,0,25.105-6.042,32.974-15.513l51.194,29.067c-1.593,4.481-2.468,9.3-2.468,14.321c0,23.636,19.23,42.865,42.867,42.865 c23.634,0,42.862-19.23,42.862-42.865C218.759,160.71,199.531,141.476,175.897,141.476z M175.897,15 c15.363,0,27.862,12.5,27.862,27.865c0,15.373-12.499,27.879-27.862,27.879c-15.366,0-27.867-12.506-27.867-27.879 C148.03,27.5,160.531,15,175.897,15z M51.33,141.476c-15.369,0-27.873-12.501-27.873-27.865c0-15.366,12.504-27.866,27.873-27.866 c15.363,0,27.861,12.5,27.861,27.866C79.191,128.975,66.692,141.476,51.33,141.476z M175.897,212.216 c-15.366,0-27.867-12.501-27.867-27.865c0-15.37,12.501-27.875,27.867-27.875c15.363,0,27.862,12.505,27.862,27.875 C203.759,199.715,191.26,212.216,175.897,212.216z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></a>   
+                    
+                  </div>
+
+                  
+                  <div class="group_item">
+                      
+                      <span class="spr-badge" id="spr_badge_6544742514739" data-rating="5.0"><span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i></span><span class="spr-badge-caption">5 review</span>
+</span>
+
+                      
+
+                      
+                      <div data-soldout-product="" class="sold_product" data-items="3,5,6,7,8,10,12,15" data-hours="10,15,16,17,18,20,25,35">
+                          <svg viewBox="0 0 448 512" class="icon icon-fire" id="icon-fire">
+                              <path fill="currentColor" d="M323.56 51.2c-20.8 19.3-39.58 39.59-56.22 59.97C240.08 73.62 206.28 35.53 168 0 69.74 91.17 0 209.96 0 281.6 0 408.85 100.29 512 224 512s224-103.15 224-230.4c0-53.27-51.98-163.14-124.44-230.4zm-19.47 340.65C282.43 407.01 255.72 416 226.86 416 154.71 416 96 368.26 96 290.75c0-38.61 24.31-72.63 72.79-130.75 6.93 7.98 98.83 125.34 98.83 125.34l58.63-66.88c4.14 6.85 7.91 13.55 11.27 19.97 27.35 52.19 15.81 118.97-33.43 153.42z"></path>
+                          </svg>
+                   
+                          
+<span>
+    Sold Many Times This Week
+</span>
+
+                          
+
+
+                      </div>
+                      
+                  </div>
+                  
+
+                  
+                  <div class="product-infor">
+                      
+                      <div class="vendor-product">
+                          
+                          
+                          <label>
+                              Vendor:
+                          </label>
+                          
+                          
+                            <span>
+                            <h7>DropItSvg</h7>
+                          </span>
+                      </div>
+                      
+
+                      
+                      <div class="sku-product">
+                          
+                          
+                          <label>
+                              ID:
+                          </label>
+                          
+                          
+                          <span>INP-<%= id %></span>
+                      </div>
+                      
+
+                      
+                      <div class="product-inventory">
+                          
+                          <label>
+                              Availability:
+                          </label>
+                          
+                          <span>In stock</span>
+                      </div>
+                      
+
+                      
+                      <div class="product-type">
+                          
+                          
+                          <label>
+                              Product Type:
+                          </label>
+                          
+                          
+                          
+                          <span>
+                            Digital
+                          </span>
+                          
+                      </div>
+                      
+                  </div>
+                  
+
+                  <div class="prices">
+                      
+                      <span class="price" itemprop="price"><span class="money"> $<%= price %></span></span>
+                      
+                      <input type="hidden" id="product_regular_price" name="product_regular_price" value="5900">
+                  </div>
+                  
+                    
+                
+                  
+                
+                      
+                    
+                
+                    
+                
+                    
+                
+                    
+
+                  
+
+                  
+
+                  
+                  
+                
+                    
+                  
+                  
+                
+                  
+
+                  
+                  <form method="post" id="add-to-cart-form" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="novalidate">
+                          
+                  
+                  
+                  
+                  
+
+                  
+                    <div class="total-price">
+                        <label>
+                            Subtotal:
+                        </label>
+                        <span class="total-money"><span class="money"> $<%= price %> </span></span>
+                    </div>
+                    
+  
+                    
+                        
+                      <div class="groups-btn">
+                        
+                        <div class="btn-checkout"> 
+                        
+                            <div data-shopify="payment-button" class="shopify-payment-button"><div><div style="
+                                width: 100%;
+                               
+                            ">
+                            
+                            
+                            <input data-btn-addtocart="" type="submit" onclick='location.href="/checkout/<%= id %>"' name="buy" class="btn" id="product-add-or-buy" value="Buy It Now" style="
+                                width: 80%;
+                            ">
+                       
+                            <input data-btn-addtocart="" type="submit" name="add" class="btn add to cart" id="product-add-or-buy" value="Add to cart"  style=" width: 80%;
+                            "></div></div></div>
+                        
+                        </div>
+                        
+                        <div class="wrapper-social-popup">
+                          <div class="title-close">
+                            <p class="social-title">Copy link</p>
+                            <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                          </div>
+                          <div class="social-garment-link" role="button" tabindex="-1"><input type="text" class="txt_copy" readonly="readonly" value="https://dropitsvg.com/product/<%=id%>"></div>
+                          
+                            <div class="share_toolbox">  
+    
+        
+  <span>
+    Share
+  </span>
+  
+    
+    <!----- www.addthis.com/dashboard ----->
+    <div class="addthis_inline_share_toolbox"></div>
+    
+  </div>
+                          
+                        </div>
+                      </div>
+                    
+                    
+                    </form>
+                  
+
+
+
+                  
+                  <div id="customers_view" data-customer-view="283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                
+<span>
+  customers are viewing this product
+</span>
+
+                  </div>
+                  
+
+                  
+
+                  
+                  <div class="secure-shopping-guarantee">
+                      <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/trust-image_800x.jpg?v=1617869040">
+                  </div>
+                  
+
+                  
+
+                  
+              </div>
+          </div>
+
+          
+              
+
+          
+
+          
+          
+
+          
+          <div class="product_bottom">
+              
+              
+<div class="tabs__product-page horizontal-tabs">
+    
+    <ul class="list-tabs">
+        
+        <li class="tab-title">
+            <a href="#" data-taptop="" data-target="#collapse-tab1" class="tab-links active">
+                
+<span>
+  Description
+</span>
+
+            </a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+
+        
+    </ul>
+
+    <div class="wrapper-tab-content">
+        
+
+        
+        
+
+        
+
+        <div class="tab-content active" data-tabcontent="" id="collapse-tab1">
+            <div class="product-description">
+                <div class="rte">
+                  <div class="description-supermarket">
+<div class="rte-top">
+<p><%= description %></p>
+</div>
+
+
+<div class="banner">
+<div class="banner-item banner-custom-bottom d-md-flex flex-row-reverse">
+<div class="content">
+<h4>Sample Unordered List</h4>
+<p><%= tags %></p>
+<ul>
+<li>1. Comodous in tempor ullamcorper miaculis.</li>
+<li>2. Lorem ipsum dolor sit ameto.</li>
+<li>3. Duis risus leo elementum darius.</li>
+<li>4. Pellentesque vitae neque mollis urna mattis.</li>
+<li>5. Divamus sit amet purus justo.</li>
+</ul>
+</div>
+<div class="banner-image"><img src="<%= imageurl %>"></div>
+</div>
+</div>
+</div>
+                </div>
+                
+
+<div id="shopify-section-product-banner" class="shopify-section product-banner-sections col-12">
+
+
+
+    
+    
+
+</div>
+                
+            </div>
+        </div>
+        
+
+        
+            
+            
+        
+
+        
+            
+            
+        
+
+        
+
+         
+
+        
+
+    </div>
+    
+</div>
+
+              
+
+              
+                <div class="product-review">
+                  <div class="content-review">
+                    <div id="shopify-product-reviews" data-id="6544742514739">
+
+<div class="spr-container">
+<div class="spr-header">
+  <h2 class="spr-header-title">Customer Reviews</h2><div class="spr-summary">
+
+      <span class="spr-starrating spr-summary-starrating">
+        <i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i><i class="spr-icon spr-icon-star"></i>
+      </span>
+      <span class="spr-summary-caption"><span class="spr-summary-actions-togglereviews">Based on 5 review</span>
+      </span><span class="spr-summary-actions">
+      <a href="#" onclick="SPR.toggleForm(6544742514739);return false">Write a review</a>
+    </span>
+  </div>
+</div>
+
+<div class="spr-content">
+  <div class="spr-form" id="form_6544742514739" style="display: none;"><form method="post" action="//productreviews.shopifycdn.com/api/reviews/create" id="new-review-form_6544742514739" class="new-review-form" onsubmit="SPR.submitForm(this);return false;"><input type="hidden" name="review[rating]"><input type="hidden" name="product_id" value="6544742514739"><h3 class="spr-form-title">Write a review</h3><fieldset class="spr-form-contact"><div class="spr-form-contact-name">
+        <label class="spr-form-label" for="review_author_6544742514739">Name</label>
+        <input class="spr-form-input spr-form-input-text " id="review_author_6544742514739" type="text" name="review[author]" value="" placeholder="Enter your name">
+      </div><div class="spr-form-contact-email">
+        <label class="spr-form-label" for="review_email_6544742514739">Email</label>
+        <input class="spr-form-input spr-form-input-email " id="review_email_6544742514739" type="email" name="review[email]" value="" placeholder="john.smith@example.com">
+      </div></fieldset>
+
+
+  <fieldset class="spr-form-review">
+
+    <div class="spr-form-review-rating">
+      <label class="spr-form-label" for="review[rating]">Rating</label>
+      <div class="spr-form-input spr-starrating ">
+        <a href="#" onclick="SPR.setRating(this);return false;" class="spr-icon spr-icon-star spr-icon-star-empty" data-value="1" aria-label="1 of 5 stars">&nbsp;</a>
+        <a href="#" onclick="SPR.setRating(this);return false;" class="spr-icon spr-icon-star spr-icon-star-empty" data-value="2" aria-label="2 of 5 stars">&nbsp;</a>
+        <a href="#" onclick="SPR.setRating(this);return false;" class="spr-icon spr-icon-star spr-icon-star-empty" data-value="3" aria-label="3 of 5 stars">&nbsp;</a>
+        <a href="#" onclick="SPR.setRating(this);return false;" class="spr-icon spr-icon-star spr-icon-star-empty" data-value="4" aria-label="4 of 5 stars">&nbsp;</a>
+        <a href="#" onclick="SPR.setRating(this);return false;" class="spr-icon spr-icon-star spr-icon-star-empty" data-value="5" aria-label="5 of 5 stars">&nbsp;</a>
+      </div>
+    </div>
+
+    <div class="spr-form-review-title">
+      <label class="spr-form-label" for="review_title_6544742514739">Review Title</label>
+      <input class="spr-form-input spr-form-input-text " id="review_title_6544742514739" type="text" name="review[title]" value="" placeholder="Give your review a title">
+    </div>
+
+    <div class="spr-form-review-body">
+      <label class="spr-form-label" for="review_body_6544742514739">
+        Body of Review
+        <span role="status" aria-live="polite" aria-atomic="true">
+          <span class="spr-form-review-body-charactersremaining">(1500)</span>
+          <span class="visuallyhidden">characters remaining</span>
+        </span>
+      </label>
+      <div class="spr-form-input">
+        <textarea class="spr-form-input spr-form-input-textarea " id="review_body_6544742514739" data-product-id="6544742514739" name="review[body]" rows="10" placeholder="Write your comments here"></textarea>
+        <script>
+          function sprUpdateCount(e){
+            var $el = SPR.$(e.currentTarget);
+            SPR.$(".spr-form-review-body-charactersremaining").html('(' + (1500 - $el.val().length) + ')');
+          }
+          SPR.$("textarea[data-product-id=6544742514739]").keyup(sprUpdateCount).trigger("keyup");
+        </script>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="spr-form-actions">
+    <input type="submit" class="spr-button spr-button-primary button button-primary btn btn-primary" value="Submit Review">
+  </fieldset></form></div>
+  <div class="spr-reviews" id="reviews_6544742514739"><div class="spr-review" id="spr-review-125994357">
+   <%- reviwes%>
+
+
+      <a href="#" class="spr-review-reportreview" onclick="SPR.reportReview(125994357);return false" id="report_125994357" data-msg="This review has been reported">Report as Inappropriate</a>
+    </div>
+  </div></div>
+</div>
+
+</div></div>
+                  </div>
+                </div>
+              
+
+              
+              
+
+
+
+
+
+
+
+
+              
+          </div>
+          
+
+      </div>
+  </div>
+</div>
+      </div>
+    </div>   
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        </main>
+
+
+
+<div class="container">
+          
+          <div class="widget-title not-before style_4">   
+              <h3 class="box-title">
+                  <span class="title"> 
+                      
+  <span>RELATED PRODUCTS
+
+</span>
+  
+                  </span>
+              </h3>
+              
+                
+                
+          </div>
+          
+          
+          <div class="widget-product suppermarket-widget-product">
+              <div class="products-grid row column-5" data-products-to-show="10" data-total-products="23">        
+                  
+              <%- comman %>
+           
+                  </div></div>
+          
+                    
+               
+              
+          </div>
+      </div>
+
+        
+
+        
+              
+            
+
+        
+        
+        
+        
+        
+        
+      
+    </div>
+<div id="shopify-section-footer-9" class="shopify-section"><style>
+      .site-footer {
+          
+          background: #f5f5f5;
+          
+          
+           
+  
+          
+      }
+      
+      .site-footer .newsletter .input-group-field {
+          background-color: #ffffff;
+          color: #505050;
+          border-color: #d5d5d5;
+      }
+      
+      .site-footer .newsletter ::-webkit-input-placeholder {
+          color: #505050;
+      }
+      
+      .site-footer .newsletter ::-moz-placeholder {
+          color: #505050;
+      }
+      
+      .site-footer .newsletter :-ms-input-placeholder {
+          color: #505050;
+      }
+      
+      .site-footer .newsletter :-moz-placeholder {
+          color: #505050;
+      }
+      
+      .site-footer .newsletter .btn {
+          background-color: #fd6506;
+          border-color: #fd6506;
+          color: #ffffff;
+      }
+      
+      .site-footer .newsletter .btn:hover {
+          background-color: #ffffff;
+          border-color: #fd6506;
+          color: #fd6506;
+      }
+  
+      .site-footer.footer-06 .newsletter .btn:hover, .site-footer.footer-08 .newsletter .btn:hover {
+          background-color: ;
+          border-color: ;
+          color: ;
+      }
+      
+      .foot-title,
+      .footer-09 .footer-newsletter .newsletter-title {
+          color: #202020; 
+      }
+  
+      .footer-parallax .dropdow-mb {
+          border-bottom: 1px solid #ebebeb; 
+      }
+      
+      .site-footer a,
+      .site-footer {
+          color: #505050;
+      }
+  
+      .site-footer .footer-newsletter .newsletter-des {
+          color: ;
+      }
+      
+      .site-footer a:hover {
+          color: #3c3c3c; 
+      }
+      
+      .site-footer .foot-link>span:before {
+          background-color: #3c3c3c; 
+      }
+      
+      .footer-bottom {
+          background-color: #ffffff; 
+          border-top: 1px solid #ebebeb; 
+      }
+  
+      .footer-06 .footer-bottom, .footer-08 .footer-bottom {
+          border-top: 0;
+      }
+      
+      .footer-bottom,
+      .footer-bottom address,
+      .footer-bottom address a {
+          color: #808080; 
+      }    
+      
+      .footer-bottom address a:hover {
+          color: #808080; 
+      }
+  
+      .footer-06 .footer-bottom address a, .footer-08 .footer-bottom address a {
+          color: #505050;
+      }
+  
+      .footer-06 .footer-bottom address a:hover, .footer-08 .footer-bottom address a:hover {
+          color: #3c3c3c;
+      }
+  
+      .footer-06 .footer-top, .footer-08 .footer-top {
+          background-color: 
+      }
+  
+      .footer-08 .footer-middle .location_info {
+          color: ;
+      }
+  
+      .footer-08 .footer-middle .column_info:before {
+          background-color: #ebebeb
+      }
+    
+      
+  
+      @media (max-width: 767px) {
+          .site-footer .dropdow-mb {
+              border-bottom: 1px solid #ebebeb; 
+          }
+      }
+  </style>
+  <footer class="site-footer footer-09" role="contentinfo" style="
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+">
+   
+   <div class="footer-top">
+       <div class="container">
+           
+           
+           
+
+           
+           
+
+           <div class="row">
+               
+
+               
+               <div class="col-footer col-12 col-md-3">
+                   
+                   <h3 class="foot-title dropdow-mb">
+                       
+<span>
+ Categories
+</span>
+
+                   </h3>
+                   
+
+                   <ul>
+                       
+                       <li>
+                           <a href="/category/1" title="Appliances" class="foot-link">
+                               
+<span>Anime &amp; Manga</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/category/2" title="Computers &amp; Laptops" class="foot-link">
+                               
+<span>Cartoon</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/category/3" title="Cameras" class="foot-link">
+                               
+<span>Gaming</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/category/4" title="Mobile Phones &amp; Tablets" class="foot-link">
+                               
+<span>Movies &amp; Series</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/category/5" title="Televisions" class="foot-link">
+                               
+<span>Social Media</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/category/6" title="Video Games &amp; Systems" class="foot-link">
+                               
+<span>Sport</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/category/7" title="Weekly Deals" class="foot-link">
+                               
+<span>Special Events</span>
+
+                           </a>
+                       </li>
+                       
+                   </ul>
+                   
+               </div>
+
+               
+
+               
+
+               
+               <div class="col-footer col-12 col-md-3">
+                   
+                   <h3 class="foot-title dropdow-mb">
+                       
+<span>
+ Further Info.
+</span>
+
+                   </h3>
+                   
+
+                   <ul>
+                       
+                       <li>
+                           <a href="/contact-us" title="About us" class="foot-link">
+                               
+<span>
+ About us
+</span>
+
+                           </a>
+                       </li>
+                       
+                       
+                       
+                       
+                       
+                       <li>
+                           <a href="/contact-us" title="Contact us" class="foot-link">
+                               
+<span>
+ Contact us
+</span>
+
+                           </a>
+                       </li>
+                       
+                       
+                       
+                       
+                       
+                       <li>
+                           <a href="/sitemap.xml" title="Sitemap" class="foot-link">
+                               
+<span>
+ Sitemap
+</span>
+
+                           </a>
+                       </li>
+                       
+                   </ul>
+                   
+               </div>
+
+               
+
+               
+
+               
+               <div class="col-footer col-12 col-md-3">
+                   
+                   <h3 class="foot-title dropdow-mb">
+                       
+<span>
+ Customer Service
+</span>
+
+                   </h3>
+                   
+
+                   <ul>
+                       
+                       
+                       
+                       <li>
+                           <a href="/terms" title="Terms of Conditions" class="foot-link">
+                               
+<span>
+ Terms of Conditions
+</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/Privacy-Policy" title="Privacy Policy" class="foot-link">
+                               
+<span>
+ Privacy Policy
+</span>
+
+                           </a>
+                       </li>
+                       
+                       <li>
+                           <a href="/refund" title="Online Returns Policy" class="foot-link">
+                               
+<span>
+ Online Refund Policy
+</span>
+
+                           </a>
+                       </li>
+                       
+                       
+                       
+                       
+                       
+                       <li>
+                           <a href="#" title="Partners" class="foot-link">
+                               
+<span>
+ Partners
+</span>
+
+                           </a>
+                       </li>
+                       
+                   </ul>
+                   
+               </div>
+
+               
+
+               
+
+               
+               
+               
+
+                
+           </div>
+           
+
+           
+           
+           
+       </div>
+   </div>
+   
+
+   
+   <div class="footer-bottom">
+       <div class="container">
+           <div class="row justify-content-lg-between">
+               
+               <div class="col-12 col-lg-6">
+                   <address>
+                       
+                       <div>
+                           © 2021 Drop it Svg. All Rights Reserved.</div>
+                       
+                   </address>
+               </div>
+               
+
+               
+               <div class="col-12 col-lg-6">
+                   
+                   
+
+                   <ul class="payment-methods">	
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Visa_Inverted_x32.png?v=1615515285" alt="visa" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Visa_Inverted_x32.png?v=1615515285">
+                       </li>
+                       
+                       
+
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/MasterCard_x32.png?v=1615515684" alt="master" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/MasterCard_x32.png?v=1615515684">
+                       </li>
+                       
+                       
+
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/American-Express_x32.png?v=1615515315" alt="american_express" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/American-Express_x32.png?v=1615515315">
+                       </li>
+                       
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Discover_x32.png?v=1615515617" alt="discover" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Discover_x32.png?v=1615515617">
+                       </li>
+                       
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/PayPal_x32.png?v=1615515557" alt="paypal" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/PayPal_x32.png?v=1615515557">
+                       </li>
+                       
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Sage_Inverted_x32.png?v=1615515643" alt="sage" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Sage_Inverted_x32.png?v=1615515643">
+                       </li>
+                       
+                       
+
+<li>
+                           <img data-src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Google_Wallet_x32.png?v=1615515655" alt="wallet" class="lazyautosizes lazyloaded" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" data-img="" sizes="40px" src="//cdn.shopify.com/s/files/1/0064/4435/1539/files/Google_Wallet_x32.png?v=1615515655">
+                       </li>
+                       
+                       
+                   </ul>
+               </div>
+               
+           </div>
+      
+       </div>
+   </div>
+   
+</footer>
+  
+  
+  </div>
+          
+          
+          <div class="footbar-fixed ">
+              <div id="shopify-section-someone-purchased" class="shopify-section">
+  <section class="product-notification notifi-right" data-time="7000">
+      <a href="javascript:void(0)" title="Close" class="close close-notifi">
+          <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+      </a>
+  
+      <div class="product-suggest">
+          <a class="product-image" href="/products/permi-unde-ona-pharetras-praneu-homuir">
+              <img src="//cdn.shopify.com/s/files/1/0064/4435/1539/products/product-1_compact.jpg?v=1628571102" alt="">
+          </a>
+          <div class="column-right">
+              <label>
+                  
+  <span>
+    Someone recently bought a
+  </span>
+  
+              </label>
+              <a class="product-name" href="/products/permi-unde-ona-pharetras-praneu-homuir">Permi Unde Ona pharetras praneu...</a>
+              <div class="info-ago">
+                  <span class="time-text">
+    35 minutes minutes ago, from Bauru, Brazil
+  </span>
+              </div>
+          </div>
+      </div>
+      <div class="hide">
+           <div class="data-product" data-id="1548643650260" data-image="//cdn.shopify.com/s/files/1/0064/4435/1539/products/product-laptop-1_8ba38545-e982-4cc5-a601-9f7adb782d6f_compact.jpg?v=1616831599" data-url="/products/hentum-tosmois-de-laptop-hamo-dincidunts" data-title="Hentum Tosmois de Laptop Hamo..." data-alt="Hentum Tosmois de  Laptop Hamo Dincidunts" data-local="United States" data-time="20 minutes"></div>            
+           <div class="data-product" data-id="1548643708120" data-image="//cdn.shopify.com/s/files/1/0064/4435/1539/products/product-loa-1_compact.jpg?v=1622102371" data-url="/products/tele-kill-giother-nodels-coped-permi-unde-ona" data-title="Tele Kill Giother Nodels Coped..." data-alt="Tele Kill Giother Nodels Coped Permi Unde Ona" data-local="Washington" data-time="30 minutes"></div>            
+           <div class="data-product" data-id="1548643726643" data-image="//cdn.shopify.com/s/files/1/0064/4435/1539/products/product-11-5_ecbb6350-5f7d-4b8f-b286-f44193317da1_compact.jpg?v=1616828238" data-url="/products/kill-giother-nodels-coped-permi-unde-ona" data-title="Kill Giother Nodels Coped Permi..." data-alt="Kill Giother Nodels Coped Permi Unde Ona" data-local="Aauru, Brazil" data-time="10 minutes"></div>            
+           <div class="data-product" data-id="1548643747526" data-image="//cdn.shopify.com/s/files/1/0064/4435/1539/products/product-1_compact.jpg?v=1628571102" data-url="/products/permi-unde-ona-pharetras-praneu-homuir" data-title="Permi Unde Ona pharetras praneu..." data-alt="Permi Unde Ona pharetras praneu homuir" data-local="Bauru, Brazil" data-time="35 minutes"></div>            
+          
+      </div>
+  </section>
+  
+  
+  <style>
+  @media (min-width: 1200px) {
+      .product-notification{
+          
+          right: 15px;
+          
+      }
+  } 
+  </style>
+  
+  
+  
+  
+  <script>
+  
+      $(document).ready(function() {
+          $('.product-notification').addClass('notifi-right');
+          if($('#accept-cookies').hasClass('cookies-right')){
+            $('.footbar-fixed').addClass('all-right')
+          }
+      })
+  
+  </script>
+  
+  
+  <script type="text/javascript">
+      function SomeonePurchased() {
+          
+              if ($.cookie('pr_notification') == 'closed') {
+                  $('.product-notification').remove();
+              }
+  
+              $('.close-notifi').bind('click',function(){
+                  $('.product-notification').remove();
+                  $.cookie('pr_notification', 'closed', {expires:1, path:'/'});
+              });  
+              var timeText = $('.product-notification .time-text span:visible').text();
+              function toggleSomething() {
+                  if($('.product-notification').hasClass('active')){
+                      $('.product-notification').removeClass('active')
+                  }else {     
+                      var number=$('.data-product').length,
+                          i = Math.floor(Math.random() * number),         
+                          images = $('.product-notification .data-product:eq('+i+')').data('image'),
+                          title = $('.product-notification .data-product:eq('+i+')').data('title'),
+                          url = $('.product-notification .data-product:eq('+i+')').data('url'),
+                          local =  $('.product-notification .data-product:eq('+i+')').data('local'),
+                          times =$('.product-notification .data-product:eq('+i+')').data('time');
+  
+                      $('.product-notification').addClass('active');
+                      $('.product-notification .product-image').find('img').attr('src', images );
+                      $('.product-notification .product-name').attr('href', url );
+                      $('.product-notification .product-name').text(title);
+                      $('.product-notification .product-image').attr('href', url );
+                      
+                      replacedTimeText = timeText.replace('[time]',times).replace('[location]',local);
+                      $('.product-notification .time-text').text(replacedTimeText);
+                      
+                  }
+              }
+  
+              var time = $('.product-notification').data('time');
+              var timer = setInterval(toggleSomething, time);
+  
+          
+      }
+  
+      SomeonePurchased();
+      $(document)
+          .on( 'shopify:section:load', SomeonePurchased )
+          .on( 'shopify:section:unload', SomeonePurchased)
+  </script>
+  
+  
+  </div>
+              <div id="shopify-section-GDPR-modal" class="shopify-section">
+  
+  
+  
+  
+  
+  
+  </div>
+              
+          </div>
+          
+        
+      </div>
+  
+      
+  
+      
+      
+      <!-- Footer scripts -->
+  
+  
+  
+  
+  
+     
+  
+  
+        
+  
+  
+  
+  <script src="/js/co.js"></script>
+  
+  
+  
+  
+  
+  
+      
+      
+  
+  
+      
+  
+  
+  
+      
+      
+      <div class="translate-header" data-translate-header="">
+          <div id="dropdown-customer" class="ct_login">  
+    <div class="customer-title">
+      <a href="javascript:void(0)" title="Close" class="close-customer close">
+        <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+        <span>
+          Close
+        </span>
+      </a>
+      
+        
+          <h5>
+            Guest Customer
+          </h5>
+          <p></p>
+        
+      
+    </div>
+    
+    <div class="customer-content">
+      
+      
+      
+    </div>
+  </div>
+  <div id="dropdown-cart"> 
+    <div class="cart-title">
+      <a href="javascript:void(0)" title="Close" class="close-cart close">
+        <svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+        <span>
+          Close
+        </span>
+      </a>
+      
+      <h5>
+        Your bag
+      </h5>
+      <div class="wrapper-cartCount" style="display: none;">
+        <span class="cartCount" data-cart-count="">0</span>
+        <span>items</span>
+      </div>
+    </div>
+    
+    <div class="has-items" style="display: none;">
+    
+        
+        
+    
+    <ol class="mini-products-list">
+    
+    
+    </ol>
+
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+  
+
+  </div><div class="text-continue" style="
+    display: none;
+">
+        <a class="btn btn-continue" id="checkoutfllow" href="/checkout/" style="
+    background-color: #5faaff;
+" id="checkoutbtn">Checkout</a>
+      </div><div class="no-items" style="display: block;">
+      <p class="cart_empty">
+        Your cart is currently empty.
+      </p>
+      <div class="text-continue">
+        <a class="btn btn-continue" href="/shop">
+          Continue Shopping
+        </a>
+      </div>
+    </div>
+  
+    
+  
+    </div>
+  </div>
+  <script src="//cdn.shopify.com/shopifycloud/shopify/assets/themes_support/option_selection-fe6b72c2bbdd3369ac0bfefe8648e3c889efca213baefd4cfb0dd9363563831f.js" type="text/javascript"></script>
+ 
+<script>
+
+function cartshowing(){
+
+
+var cartconfig = localStorage.getItem("cart")
+if(cartconfig!=null){
+if(JSON.parse(cartconfig).length==0){
+    console.log("po 1");
+document.getElementsByClassName("no-items")[0].style.display="block";
+document.getElementsByClassName("text-continue")[0].style.display = "none";
+document.getElementsByClassName("has-items")[0].style.display = "none";
+
+}else{
+    console.log("po 2");
+    document.getElementsByClassName("no-items")[0].style.display="none";
+   document.getElementsByClassName("text-continue")[0].style.display = "block";
+   document.getElementsByClassName("has-items")[0].style.display = "block";
+   scrip = ``;
+   checkoutfllowhref= "/checkout/"
+   JSON.parse(localStorage.getItem("cart")).forEach(function(cartitem){
+    var price = cartitem.price;
+    var image =  cartitem.image;
+    var title = cartitem.title;
+    var id =  cartitem.id;
+    checkoutfllowhref = checkoutfllowhref+id+"&"
+   scripto = `<li class="item"><a href="/product/`+id+`" class="product-image"><img src="`+image+`" alt="`+title+`"></a><div class="product-details"><a class="product-name" href="/product/`+id+`">`+title.substring(0,24)+`</a><div class="option"><small>Type:Digital</small><a href="JavaScript:void(0);" class="product-details__edit" data-cart-edit="" aria-label="link" data-url="/product/`+id+`"><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 48 48" width="144px" height="144px"><path d="M 10.5 6 C 7.468 6 5 8.468 5 11.5 L 5 36 C 5 39.309 7.691 42 11 42 L 22.605469 42 C 22.858469 41.042 23.225516 39.759 23.728516 38 L 11 38 C 9.897 38 9 37.103 9 36 L 9 16 L 39 16 L 39 22.521484 C 39.427 22.340484 39.8615 22.188422 40.3125 22.107422 C 40.7065 22.036422 41.102859 21.992953 41.505859 22.001953 C 42.015859 22.001953 42.515 22.067641 43 22.181641 L 43 11.5 C 43 8.468 40.532 6 37.5 6 L 10.5 6 z M 13.5 20 A 1.50015 1.50015 0 1 0 13.5 23 L 15.5 23 A 1.50015 1.50015 0 1 0 15.5 20 L 13.5 20 z M 21.5 20 C 20.672 20 20 20.671 20 21.5 C 20 22.329 20.672 23 21.5 23 L 34.5 23 C 35.328 23 36 22.329 36 21.5 C 36 20.671 35.328 20 34.5 20 L 21.5 20 z M 41.498047 24 C 41.224047 24.001 40.946969 24.025172 40.667969 24.076172 C 39.783969 24.235172 38.939563 24.696156 38.226562 25.410156 L 26.427734 37.208984 C 26.070734 37.565984 25.807969 38.011141 25.667969 38.494141 L 24.097656 43.974609 C 24.025656 44.164609 23.993 44.365406 24 44.566406 C 24.013 44.929406 24.155594 45.288406 24.433594 45.566406 C 24.710594 45.843406 25.067688 45.986 25.429688 46 C 25.630688 46.007 25.834391 45.975344 26.025391 45.902344 L 31.505859 44.332031 C 31.988859 44.192031 32.431062 43.930266 32.789062 43.572266 L 44.589844 31.773438 C 45.303844 31.060437 45.764828 30.216031 45.923828 29.332031 C 45.973828 29.053031 45.997047 28.775953 45.998047 28.501953 C 46.001047 27.307953 45.540687 26.179312 44.679688 25.320312 C 43.820687 24.460313 42.692047 23.998 41.498047 24 z M 13.5 26 A 1.50015 1.50015 0 1 0 13.5 29 L 15.5 29 A 1.50015 1.50015 0 1 0 15.5 26 L 13.5 26 z M 21.5 26 C 20.672 26 20 26.671 20 27.5 C 20 28.329 20.672 29 21.5 29 L 31.808594 29 L 34.779297 26.027344 C 34.688297 26.010344 34.596 26 34.5 26 L 21.5 26 z M 13.5 32 A 1.50015 1.50015 0 1 0 13.5 35 L 15.5 35 A 1.50015 1.50015 0 1 0 15.5 32 L 13.5 32 z M 21.5 32 C 20.672 32 20 32.671 20 33.5 C 20 34.329 20.672 35 21.5 35 L 25.808594 35 L 28.808594 32 L 21.5 32 z"></path></svg></a></div><div class="cart-collateral"><span class="price"><span class="money"> $`+price+` </span></span></div></div><a href="javascript:void(0)" title="Remove This Item" onclick="removefromcart(this)" class="btn-remove"><svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-2x"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg></a></li>`
+  scrip = scrip+scripto
+
+   });
+   document.getElementById("checkoutfllow").href = checkoutfllowhref;
+   document.getElementsByClassName("mini-products-list")[0].innerHTML = scrip;
+   
+
+
+
+
+
+
+
+
+
+
+
+
+};
+
+
+}else{
+document.getElementsByClassName("no-items")[0].style.display="block"
+localStorage.setItem("cart","[]");
+}
+
+document.getElementsByClassName("cartCount")[0].innerText = JSON.parse(localStorage.getItem("cart")).length;
+document.getElementsByClassName("cartCount")[1].innerText = JSON.parse(localStorage.getItem("cart")).length;
+
+}
+
+cartshowing()
+
+
+
+//add to cart
+
+document.getElementsByClassName("btn add to cart")[0].onclick = function(){
+if(localStorage.getItem("cart").search("<%= imageurl  %>")>=0){
+
+}else{
+
+
+var dataitem = {
+price :  "<%= price  %>",
+image : "<%= imageurl  %>",
+title : "<%= title  %>",
+id : "<%= id  %>",
+
+};
+
+fulldata = JSON.parse(localStorage.getItem("cart"));
+fulldata.push(dataitem);
+localStorage.setItem("cart",JSON.stringify(fulldata))
+
+console.log(dataitem);
+};
+
+document.getElementsByClassName("cartCount")[0].innerText = JSON.parse(localStorage.getItem("cart")).length;
+document.getElementsByClassName("cartCount")[1].innerText = JSON.parse(localStorage.getItem("cart")).length;
+
+
+
+
+
+}
+
+
+//
+function removefromcart(element) {
+
+
+
+imgkey= element.parentElement.children[0].children[0].src;
+
+JSON.parse(localStorage.getItem("cart")).forEach(function(ids){
+
+if(ids.image==imgkey){
+
+updatedcart = localStorage.getItem("cart").replace(JSON.stringify(ids),"").replace(",,",",").replace("[,","[").replace(",]","]")
+console.log(updatedcart)
+localStorage.setItem("cart",updatedcart )
+}
+
+
+
+});
+element.parentElement.remove()
+}
+
+
+</script>
+
+  </body></html>
