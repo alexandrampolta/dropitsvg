@@ -18,7 +18,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname ,'public')));
 app.set("views", "./views");
 app.use(fileUpload());
-import uuid from 'node-uuid'
 
 
 
@@ -33,59 +32,6 @@ paypal.configure({
   client_id:"AUHUiKxuQ3bT5zWgqh_PLziAzuhmgf6G_11qlAr5W-5rxCzz9OPvjUONDJ3pAbiXrCAGNvdzUPeUORxo",
   client_secret:"ELvo3-9YndNcxnap1x6oLUQdorIg_OT9RQVsd_pV3iop3rl1pSS4LMBD74spiZqcrJFMMfz1WMy5KuQX",
 });
-// var card_data = {
-//   "type": "visa",
-//   "number": "4902374855943031",
-//   "expire_month": "10",
-//   "expire_year": "2024",
-//   "cvv2": "123",
-//   "first_name": "Joe",
-//   "last_name": "Shopper",
-//   "external_customer_id": uuid.v4()
-//   };
-  
-//   paypal.creditCard.create(card_data, function(error, credit_card){
-//     if(error){
-//         console.error(error);
-//     } else {
-//       console.log(credit_card);
-//         var card_data = {
-//             "intent": "sale",
-//             "payer": {
-//                 "payment_method": "credit_card",
-//                 "funding_instruments": [{
-//                     "credit_card_token": {
-//                         "credit_card_id": credit_card.id,
-//                         "payer_id": credit_card.external_customer_id
-//                     }
-//                 }]
-//             },
-//             "transactions": [{
-//                 "amount": {
-//                     "total": "50.47",
-//                     "currency": "USD",
-//                     "details": {
-//                         "subtotal": "7.41",
-//                         "tax": "0.03",
-//                         "shipping": "2"
-//                     }
-//                 },
-//                 "description": "This is the payment transaction ." 
-//             }]
-//         };
-// paypal.payment.create(card_data, function(error, payment){
-//             if(error){
-//               console.log("error");
-//                 console.error(error);
-//             } else {
-//                 console.log(JSON.stringify(payment));
-//             }
-//         });
-//     }
-// });
-
-
-
 
 
 
@@ -315,7 +261,7 @@ app.get('/karimaswan279262', function(req, res){
 
 
 
-//  databases.query('CREATE TABLE productss(id int AUTO_INCREMENT,PRIMARY KEY (id) ,title VARCHAR(255),price VARCHAR(255)  ,image VARCHAR(255),tags MEDIUMTEXT  ,zip VARCHAR(255),description MEDIUMTEXT ,category VARCHAR(255));' , function (error, results, fields) {
+//  databases.query('CREATE TABLE productss(id int AUTO_INCREMENT,PRIMARY KEY (id) ,title VARCHAR(255),price VARCHAR(255)  ,image VARCHAR(255),tags MEDIUMTEXT  ,zip VARCHAR(255),description LONGTEXT ,category VARCHAR(255));' , function (error, results, fields) {
 //   if (error) throw error;
 //   console.log(results)
 // });
@@ -333,7 +279,7 @@ app.get('/karimaswan279262', function(req, res){
 
 
 
-//  databases.query('CREATE TABLE sales(id int AUTO_INCREMENT,PRIMARY KEY (id) ,idkey VARCHAR(255),transactionid VARCHAR(255),useremail VARCHAR(255),orderinfos VARCHAR(255));' , function (error, results, fields) {
+//  databases.query('CREATE TABLE sales(id int AUTO_INCREMENT,PRIMARY KEY (id) ,idkey VARCHAR(255),transactionid VARCHAR(255),useremail VARCHAR(255),orderinfos LONGTEXT);' , function (error, results, fields) {
 //   if (error) throw error;
 //   console.log(results)
 // });
