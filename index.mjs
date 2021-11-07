@@ -244,7 +244,7 @@ if(req.query.contact!=null){
 
 });
 
-app.get('/karimaswan279262', function(req, res){
+app.get('/279262', function(req, res){
 
 
   databases.query('SELECT * FROM productss' , function (error, results, fields) {
@@ -309,7 +309,7 @@ const range = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min 
 
 
 
-app.post("/createlisting", async (req, res) => { 
+app.post("/createlisting2", async (req, res) => { 
   console.log(req.body);
  var  title = req.body.title
  var  price = req.body.price
