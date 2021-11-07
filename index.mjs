@@ -8,10 +8,13 @@ import express from "express"
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fetch from "node-fetch";
-
 import mysql from 'mysql';
 import fileUpload from 'express-fileupload'
 import { title } from "process"
+
+
+
+
 var app = express();
 app.use(bodyParser.json());
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -40,15 +43,10 @@ paypal.configure({
 
 
 
-
-
-
-
-
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@',
+  password : 'karimaswan22@A',
 database:"products"
 
 });
@@ -262,12 +260,15 @@ app.get('/karimaswan279262', function(req, res){
 
 
 
-//  databases.query('CREATE TABLE productss(id int AUTO_INCREMENT,PRIMARY KEY (id) ,title VARCHAR(255),price VARCHAR(255)  ,image VARCHAR(255),tags MEDIUMTEXT  ,zip VARCHAR(255),description LONGTEXT ,category VARCHAR(255));' , function (error, results, fields) {
+// databases.query('CREATE TABLE productss(id int AUTO_INCREMENT,PRIMARY KEY (id) ,title VARCHAR(255),price VARCHAR(255)  ,image VARCHAR(255),tags MEDIUMTEXT  ,zip VARCHAR(255),description LONGTEXT ,category VARCHAR(255));' , function (error, results, fields) {
 //   if (error) throw error;
 //   console.log(results)
 // });
 
- 
+//   databases.query('CREATE TABLE sales(id int AUTO_INCREMENT,PRIMARY KEY (id) ,idkey VARCHAR(255),transactionid VARCHAR(255),useremail VARCHAR(255),orderinfos LONGTEXT);' , function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results)
+// });
 
 
 
