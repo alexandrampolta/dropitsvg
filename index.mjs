@@ -738,7 +738,7 @@ max-height: 500px;
 app.get('/product-free/:uid', function(req, res){
 
   var ids = req.params.uid
-  if(ids==1 || ids==2 || ids==3 || ids==4 || ids==5 || ids==6){
+     if(ids<=853){
 
 
 
@@ -1034,8 +1034,8 @@ app.get('/product/:uid', function(req, res){
   if(isNaN(ids)) 
    return res.render("error.ejs",{})
    
-   if(ids==1 || ids==2 || ids==3 || ids==4 || ids==5 || ids==6)
-     res.redirect("/product-free/"+ids)
+   if(ids<=853)
+    return res.redirect("/product-free/"+ids)
 
   
     databases.query('SELECT * FROM productss where id = "'+ids+'"' , function (error, results, fields) {
