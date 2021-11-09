@@ -439,13 +439,6 @@ New
 
 
 
-
-
- 
-
-
-
-
 </div>
 
 
@@ -939,7 +932,8 @@ queryhtml = queryhtml+queryhtmlcreated
 
 var category_id = num+1
 console.log(category_id);
-var zipo = zip.toString().replace("amp;",""); 
+var zipo = zip.toString().split("id=")[1].split("&")[0]
+console.log(zipo);
 res.render("productfree.ejs",{
   title:title,
   zip:zipo,
