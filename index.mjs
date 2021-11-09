@@ -79,7 +79,7 @@ console.log(error);
 var latestsvgs = ``;
     results.forEach(function(response){
 
-      latestsvgs = latestsvgs +`<div class="grid-item col-6 col-md-4 col-lg-3 col5 " style="
+      latestsvgs = latestsvgs +`<div class="item col-6 col-md-4 col-lg-3 col5 " style="
 max-height: 500px;
 ">
                  <div class="bg-grid-item">
@@ -392,7 +392,7 @@ var firstp = lastp-20;
 var htmlshop = ``;
 results.forEach(function(response){
 
-  htmlshop = htmlshop +`<div class="grid-item col-6 col-md-4 col-lg-3 col5 " style="
+  htmlshop = htmlshop +`<div class="item col-6 col-md-4 col-lg-3 col5 " style="
 max-height: 500px;
 ">
              <div class="bg-grid-item">
@@ -588,7 +588,7 @@ res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
 var keysearchhtml = ``;
     results.forEach(function(response){
 
-keysearchhtml = keysearchhtml +`<div class="grid-item col-6 col-md-4 col-lg-3 col5 " style="
+keysearchhtml = keysearchhtml +`<div class="item col-6 col-md-4 col-lg-3 col5 " style="
 max-height: 500px;
 ">
                  <div class="bg-grid-item">
@@ -780,7 +780,7 @@ var pricep = item.price;
 var imagep = item.image;
 var idp = item.id;
 var queryhtmlcreated = `
-<div class="grid-item col-6 col-md-4 col-lg-3 col5 " style="
+<div class="item col-6 col-md-4 col-lg-3 col5 " style="
      max-height: 500px;
      /* background-color: lightblue; */
  ">
@@ -1101,7 +1101,7 @@ var pricep = item.price;
 var imagep = item.image;
 var idp = item.id;
 var queryhtmlcreated = `
-<div class="grid-item col-6 col-md-4 col-lg-3 col5 " style="
+<div class="item col-6 col-md-4 col-lg-3 col5 " style="
      max-height: 500px;
      /* background-color: lightblue; */
  ">
@@ -1325,7 +1325,7 @@ if(results.length==0){
   var keysearchhtml = ``;
   results.forEach(function(response){
 
-keysearchhtml = keysearchhtml +`<div class="grid-item col-6 col-md-4 col-lg-3 col5 " style="
+keysearchhtml = keysearchhtml +`<div class="item col-6 col-md-4 col-lg-3 col5 " style="
 max-height: 500px;
 ">
                <div class="bg-grid-item">
