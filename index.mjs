@@ -46,7 +46,7 @@ paypal.configure({
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@A',
+  password : 'karimaswan22@',
 database:"products"
 
 });
@@ -64,7 +64,11 @@ if(err)
 // });
 
 
+app.get('/ladminpanelweb', function(req, res){
 
+  res.render("adminpanelweb.ejs",{})
+
+})
 
 
 
@@ -935,9 +939,10 @@ queryhtml = queryhtml+queryhtmlcreated
 
 var category_id = num+1
 console.log(category_id);
+var zipo = zip.toString().replace("amp;",""); 
 res.render("productfree.ejs",{
   title:title,
-  zip:zip,
+  zip:zipo,
   imageurl:imageurl,
   description:description,
  tags:tags,
@@ -968,7 +973,6 @@ comman:queryhtml,
      
   
     });
-
 
 
 
