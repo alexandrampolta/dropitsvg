@@ -3787,7 +3787,7 @@
         Your cart is currently empty.
       </p>
       <div class="text-continue">
-        <a class="btn btn-continue" href="/collections/all">
+        <a class="btn btn-continue" href="/shop">
           Continue Shopping
         </a>
       </div>
@@ -3875,6 +3875,7 @@ localStorage.setItem("cart",updatedcart )
 });
 element.parentElement.remove()
 }
+document.getElementsByClassName("btn btn-continue")[1].href = "/shop";
 
  </script>
   
