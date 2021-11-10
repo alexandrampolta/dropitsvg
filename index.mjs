@@ -775,7 +775,8 @@ max-height: 500px;
 app.get('/product-free/:uid', function(req, res){
 
   var ids = req.params.uid
-     if(ids<=863){
+  if(isNaN(ids))
+   return res.render("error.ejs")
 
 
 
@@ -783,7 +784,7 @@ app.get('/product-free/:uid', function(req, res){
       if (error) throw error;
       if(results.length==0)
           return res.render("error.ejs",{})
-      
+      if(results[0].price==0){
       var title = results[0].title
       var touchtitle = title.split(' ');
       var title_mini = touchtitle[0]+" "+touchtitle[1]+" "+touchtitle[2]
@@ -1005,6 +1006,9 @@ comman:queryhtml,
 
       
      
+  }else{
+    res.redirect("/product/"+ids)
+  }
   
     });
 
@@ -1022,9 +1026,6 @@ comman:queryhtml,
 
 
 
-  }else{
-    res.render("error.ejs",{})  
-  }
 
 
 })
@@ -1078,14 +1079,14 @@ app.get('/product/:uid', function(req, res){
   if(isNaN(ids)) 
    return res.render("error.ejs",{})
    
-   if(ids<=863 )
-    return res.redirect("/product-free/"+ids)
 
   
     databases.query('SELECT * FROM productss where id = "'+ids+'"' , function (error, results, fields) {
       if (error) throw error;
       if(results.length==0)
           return res.render("error.ejs",{})
+     if(results[0].price!=0){
+
    
      var  reviweshtml = ``
    var   n = [1,2,3,4,5];
@@ -1329,8 +1330,11 @@ reviwes:reviweshtml,
 
 
 
-      
-     
+   }else{
+    return res.redirect("/product-free/"+ids)
+
+   }
+
   
     });
    
