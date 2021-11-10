@@ -542,6 +542,52 @@ lastpage:lastpageis
 
 
 })
+// import fs from "fs"
+// var rangee = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min + i);
+// var num1 = 738
+// var num2 = 863
+// var sitemapp = 1
+// var a = `<?xml version="1.0" encoding="UTF-8"?>
+// <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">`;
+// var allow = true
+// setInterval(function(){
+//   if(allow==true){
+//   allow = false
+//  var  allnums = rangee(num1, num2);
+
+//   allnums.forEach(function(productid){
+// a = a+"\n"+`<url>
+// <loc>https://dropitsvg.store/product-free/`+productid+`</loc>
+// <changefreq>weekly</changefreq>
+// <priority>1.0</priority>
+// </url>`
+
+
+// if(productid==num2){
+//   // console.log(a)
+//   a = a+"\n"+`</urlset>`
+//  fs.writeFile("./views/sitemapp"+sitemapp+".xml",a, 'utf8', err => {
+//         if (err) throw err;
+//         console.log('File has been saved!');
+//         num1 = num1+1100;
+//         num2 = num2+1100;
+//         sitemapp = sitemapp+1
+//         a = `<?xml version="1.0" encoding="UTF-8"?>
+//         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">`
+//         console.log("moved to next" +num1+"to .. "+num2)
+//              });
+
+
+
+
+
+// }
+
+// });
+// }else{
+
+// }
+// },200)
 
 app.get('/search', function(req, res){
   var searchterm = req.query.q;
