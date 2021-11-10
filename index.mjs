@@ -58,10 +58,6 @@ if(err)
 
 })
 
-// databases.query('SELECT * FROM ( SELECT * FROM items ORDER BY id DESC LIMIT 2 )Var1 ORDER BY id ASC;' , function (error, results, fields) {
-//   if (error) throw error;
-//   console.log(results)
-// });
 
 
 app.get('/ladminpanelweb', function(req, res){
@@ -314,7 +310,6 @@ const range = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min 
 
 
 app.post("/createlisting2", async (req, res) => { 
-  console.log(req.body);
  var  title = req.body.title
  var  price = req.body.price
  var  tags = req.body.tags
@@ -336,7 +331,6 @@ var data = {
   category:categorymain
 
   };
-console.log(data);
     databases.query('INSERT INTO productss SET ?' , data,function (error, results, fields) {
       if (error) throw error;
       databases.query('SELECT * FROM productss	' , function (error, results, fields) {
@@ -988,6 +982,12 @@ comman:queryhtml,
 
 
 })
+
+// databases.query('SELECT * FROM ( SELECT * FROM productss ORDER BY id DESC LIMIT 2 )Var1 ORDER BY id ASC;' , function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results)
+// });
+
 var reviwes = [
   "Just what I was looking for. Used image for sublimation and it came out beautifully.",
   "Good, clear quality. Love how to the svgs were seperated by color. I've only used pngs so that was very nice!",
