@@ -775,7 +775,7 @@ max-height: 500px;
 app.get('/product-free/:uid', function(req, res){
 
   var ids = req.params.uid
-     if(ids<=853){
+     if(ids<=863){
 
 
 
@@ -1078,7 +1078,7 @@ app.get('/product/:uid', function(req, res){
   if(isNaN(ids)) 
    return res.render("error.ejs",{})
    
-   if(ids<=853)
+   if(ids<=863 )
     return res.redirect("/product-free/"+ids)
 
   
