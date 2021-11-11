@@ -772,7 +772,7 @@ max-height: 500px;
 });
 
 })
-app.get('/product-free/:uid', function(req, res){
+app.get('/product-free/:uid/:ok?', function(req, res){
 
   var ids = req.params.uid
   if(isNaN(ids))
@@ -1072,8 +1072,7 @@ var dayafter = [
 ]
 
 
-app.get('/product/:uid', function(req, res){
-
+app.get('/product/:uid/:ok?', function(req, res){
   var ids = req.params.uid;
   console.log(ids);
   if(isNaN(ids)) 
@@ -2132,13 +2131,12 @@ databases.query(dbword, function (error, results, fields) {
 
 
 
-
-
 app.get('*', function(req, res){
+  res.render("error.ejs",{})
+ 
+ });
 
- res.render("error.ejs",{})
 
-});
 app.on("uncaughtException", function (err) {
   console.error(err.stack);
   console.log("Node NOT Exiting...");
