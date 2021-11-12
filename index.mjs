@@ -14,7 +14,7 @@ import { title } from "process"
 
 
 
-
+ 
 var app = express();
 app.use(bodyParser.json());
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -46,7 +46,7 @@ paypal.configure({
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@',
+  password : 'karimaswan22@A',
 database:"products"
 
 });
