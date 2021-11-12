@@ -1997,7 +1997,7 @@ results.forEach(function(ido){
 databases.query(dbword, function (error, results, fields) {
   var drives = ``;
   results.forEach(function(imo){
-  var driveid = imo.zip.replace("https://drive.google.com/file/d/","").replace("/edit").replace("/","")
+  var driveid = imo.zip.replace("https://drive.google.com/file/d/","").replace("/edit","").replace("/","").replace("view?usp=drivesdk","").replace("?usp=drivesdk","").replace("view","")
     drives = drives+`
     <li class="cart-product-item">
           <div class="details">
