@@ -3,7 +3,7 @@ import mysql from 'mysql';
 var databases = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : 'karimaswan22@',
+    password : 'karimaswan22@A',
   database:"products"
   
   });
@@ -38,11 +38,11 @@ setInterval(function(){
 
       }else{
 
-        var minit  = results[0].title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-")
+        var minit  = results[0].title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-")
 var productidto = results[0].id
 
         a = a+"\n"+`<url>
-<loc>https://dropitsvg.com/product-free/`+productidto+`/`+minit+`</loc>
+<loc>https://dropitsvg.com/product/`+productidto+`/`+minit+`</loc>
 <changefreq>weekly</changefreq>
 <priority>1.0</priority>
 </url>`
