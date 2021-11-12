@@ -18,8 +18,8 @@ var databases = mysql.createConnection({
   
 import fs from "fs"
 var rangee = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min + i);
-var num1 = 863
-var num2 = 1363
+var num1 = 1363
+var num2 = 1782
 
 var sitemapp = 2
 
