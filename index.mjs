@@ -318,7 +318,7 @@ app.post("/createlisting2", async (req, res) => {
   var description = req.body.description
   var category = req.body.category
 
-
+   
 
   var categorymain = categories[category];
 var data = {
@@ -335,7 +335,6 @@ var data = {
       if (error) throw error;
       databases.query('SELECT * FROM productss	' , function (error, results, fields) {
         if (error) throw error;
-        console.log(results)
       });
       
       res.json({"status":"good"})
