@@ -1986,7 +1986,8 @@ app.get('/congra/:ids/:transactionid', function(req, res){
 var transaction = req.params.transactionid;
 
 databases.query('SELECT * FROM  sales WHERE transactionid= "'+transaction+'"' , function (error, results, fields) {
-
+if(results.length==0)
+ return res.render("error.ejs")
 var dbword = 'SELECT * FROM  productss WHERE id= "'+results[0].idkey+'"'
 results.forEach(function(ido){
   dbword = dbword +'OR id = "'+ido.idkey+'" '
