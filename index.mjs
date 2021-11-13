@@ -545,10 +545,22 @@ lastpage:lastpageis
 
 
 app.get('/search', function(req, res){
-  var searchterm = req.query.q;
-  if(searchterm==null || searchterm==undefined)
-   return res.redirect("/shop")
+
+  var page = req.query.page;
+  if(page<=0)
+  return res.redirect("/shop?page=1");
   
+  if(page==null || page==undefined || page<=0){
+    page = 1
+  };
+  var firstp = lastp-20;
+  var lastp = page*20;
+
+
+  var searchterm = req.query.q;
+  if(searchterm==null || searchterm==undefined || searchterm=="")
+   return res.redirect("/shop")
+
   var worddb = 'SELECT * FROM productss where id like "%ded%"';
   searchterm.split(" ").forEach(function(keyword){
 
@@ -558,15 +570,23 @@ app.get('/search', function(req, res){
   });
  
 
-  databases.query(worddb , function (error, results, fields) {
+  databases.query(worddb+"limit "+firstp+","+lastp+"" , function (error, results, fields) {
     if (error) throw error;
      console.log(results)
     //  res.json({results})
     if(results.length==0){
 console.log("no results");
-var htmlsearch= "";
-var raport = `No Match For '`+searchterm+`'`
-res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+if(page==1){
+  var keysearchhtml= "";
+  var raport = `No Match For '`+searchterm+`'`
+  res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+  
+}else{
+  var bostthrough = parseFloat(page)-1
+  res.redirect("/search?q="+searchterm+"page="+bostthrough);
+}
+
+
 
 
 
@@ -720,9 +740,10 @@ max-height: 500px;
 
     });
 
-
+    var nextpageis = parseFloat(page)+1
+    var lastpageis = parseFloat(page)-1
     var raport = `Search Result For '`+req.query.q+`'`
-   res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+   res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,nextpage:nextpageis,lastpage:lastpageis})
   }
 });
 
