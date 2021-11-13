@@ -553,9 +553,9 @@ app.get('/search', function(req, res){
   if(page==null || page==undefined || page<=0){
     page = 1
   };
-  var firstp = lastp-20;
+  
   var lastp = page*20;
-
+  var firstp = lastp-20;
 
   var searchterm = req.query.q;
   if(searchterm==null || searchterm==undefined || searchterm=="")
@@ -570,7 +570,7 @@ app.get('/search', function(req, res){
   });
  
 
-  databases.query(worddb+"limit "+firstp+","+lastp+"" , function (error, results, fields) {
+  databases.query(worddb+" limit "+firstp+","+lastp+"" , function (error, results, fields) {
     if (error) throw error;
      console.log(results)
     //  res.json({results})
