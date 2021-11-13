@@ -547,10 +547,7 @@ lastpage:lastpageis
 app.get('/search', function(req, res){
 
   var page = req.query.page;
-  if(page<=0)
-  return res.redirect("/shop?page=1");
-  
-  if(page==null || page==undefined || page<=0){
+ if(page==null || page==undefined || page<=0){
     page = 1
   };
   
@@ -743,7 +740,7 @@ max-height: 500px;
     var nextpageis = parseFloat(page)+1
     var lastpageis = parseFloat(page)-1
     var raport = `Search Result For '`+req.query.q+`'`
-   res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,nextpage:nextpageis,lastpage:lastpageis})
+   res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,nextpage:nextpageis,lastpage:lastpageis,searchterm:searchterm})
   }
 });
 
