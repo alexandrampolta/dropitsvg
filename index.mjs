@@ -30,7 +30,7 @@ paypal.configure({
   mode: "live", //sandbox or live
   client_id:"AQnoyKMeHzzaNXMUTY2azfSa2nKJFn1i5niNhOQtGqeIr4ZpvGZh3riSicmFdpa0E5meeVvtqlvE8Sm8",
   client_secret:"EJY4ix34RapHmZrCH_FBxQxqz8VThEZG0GWboVOlm-L4KktUgvJqRmoNRgrcsiPM-w8mFYBgY8RdVDmC",
-}
+});
 // paypal.configure({
 //   mode: "sandbox", //sandbox or live
 //   client_id:"AUHUiKxuQ3bT5zWgqh_PLziAzuhmgf6G_11qlAr5W-5rxCzz9OPvjUONDJ3pAbiXrCAGNvdzUPeUORxo",
