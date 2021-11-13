@@ -26,16 +26,16 @@ app.use(fileUpload());
 
 
 
-// paypal.configure({
-//   mode: "live", //sandbox or live
-//   client_id:"AaendWmNph5gmEPzyWtFiFUFYolmOH6JPRy--MydaQK0yYA15kX6Y1LFozIxI3-N9v0Ny_ATYK4Vaiq_",
-//   client_secret:"ELHYHxQLWpeHkrvEnjf2BieiopgLcjsXjRy5YXRKS5LiyzGkuZDyzUs0NOSJbII0U964NKYw2nTM26VJ",
-// }
 paypal.configure({
-  mode: "sandbox", //sandbox or live
-  client_id:"AUHUiKxuQ3bT5zWgqh_PLziAzuhmgf6G_11qlAr5W-5rxCzz9OPvjUONDJ3pAbiXrCAGNvdzUPeUORxo",
-  client_secret:"ELvo3-9YndNcxnap1x6oLUQdorIg_OT9RQVsd_pV3iop3rl1pSS4LMBD74spiZqcrJFMMfz1WMy5KuQX",
-});
+  mode: "live", //sandbox or live
+  client_id:"AQnoyKMeHzzaNXMUTY2azfSa2nKJFn1i5niNhOQtGqeIr4ZpvGZh3riSicmFdpa0E5meeVvtqlvE8Sm8",
+  client_secret:"EJY4ix34RapHmZrCH_FBxQxqz8VThEZG0GWboVOlm-L4KktUgvJqRmoNRgrcsiPM-w8mFYBgY8RdVDmC",
+}
+// paypal.configure({
+//   mode: "sandbox", //sandbox or live
+//   client_id:"AUHUiKxuQ3bT5zWgqh_PLziAzuhmgf6G_11qlAr5W-5rxCzz9OPvjUONDJ3pAbiXrCAGNvdzUPeUORxo",
+//   client_secret:"ELvo3-9YndNcxnap1x6oLUQdorIg_OT9RQVsd_pV3iop3rl1pSS4LMBD74spiZqcrJFMMfz1WMy5KuQX",
+// });
 
 
 
