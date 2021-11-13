@@ -46,7 +46,7 @@ paypal.configure({
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@A',
+  password : 'karimaswan22@',
 database:"products"
 
 });
