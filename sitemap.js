@@ -933,7 +933,7 @@ sheet.split("\n").forEach(function(itemm){
 var netimg =  itemm.split("drivesdk")[1].replace(/	/g,"").replace("        ","");
 
 databases.query('UPDATE productss SET image = "https://dropitsvg.com/images/dropitsvgpl/'+netimg+'" WHERE zip like "%'+zip+'%";' , function (error, results, fields) {
-console.log(err);
+console.log(error);
 console.log('ok');
 })
 
