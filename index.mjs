@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname ,'public')));
+app.use(express.static(path.join(__dirname ,'public/dropitsvgcom')));
+app.use(express.static(path.join(__dirname ,'public/dropitsvgpl')));
+
 app.set("views", "./views");
 app.use(fileUpload());
 
