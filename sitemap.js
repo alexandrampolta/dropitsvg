@@ -924,12 +924,16 @@ https://drive.google.com/file/d/1AEqdNMas1PQQEgYqSQYYErP4W861jkZ_/view?usp=drive
 https://drive.google.com/file/d/18eRFSF0xGGxMDGgP5PjA19opSAmIXpo3/view?usp=drivesdk	Mickey-balloon-SVG-free-907.jpeg
 https://drive.google.com/file/d/1BWoVQ_ftqMuegWoLFZbjXaQ6z-Ebt-OL/view?usp=drivesdk	Beer-bottle-svg-free-908.jpeg
 https://drive.google.com/file/d/1DJU8Ig2nzP5bF3mFGqwoOJ8ZMZFai5As/view?usp=drivesdk	School-bus-monograms-svg-free-909.jpeg`
+
+
+
+
 sheet.split("\n").forEach(function(itemm){
  var  zip  = itemm.split("drivesdk")[0]
-var netimg =  itemm.split("drivesdk")[1].replace("	","");
+var netimg =  itemm.split("drivesdk")[1].replace(/	/g,"").replace("        ","");
 
 databases.query('UPDATE productss SET image = "https://dropitsvg.com/images/dropitsvgpl/'+netimg+'" WHERE zip like "%'+zip+'%";' , function (error, results, fields) {
-
+console.log(err);
 console.log('ok');
 })
 
