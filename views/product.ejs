@@ -587,22 +587,23 @@
           
           "description": "<%= description %>",
           
-          "brand": {
-            "@type": "Thing",
-            "name": "DROP IT SVG"
-          },
+        
           "offers": {
             "@type": "Offer",
-            
-            "priceCurrency": "GBP",
+            "priceCurrency": "USD",
             "price": "<%= price %>",
-            "availability": "InStock",
+            priceValidUntil: "2023-12-31"
+            "availability": "http://schema.org/InStock",
+
             "url" : "https://dropitsvg.com/product/<%= title %>",
             "seller": {
               "@type": "Organization",
-              "name": "dropitsvg.com"
+             name: "SVG DROP",
+             url: "https://dropitsvg.com",
             }
-          }
+          },
+          sku: <%= id %>
+
         }
         </script>
         

@@ -573,35 +573,36 @@
       
       
     <script type="application/ld+json">{
-          "@context": "http://schema.org/",
-          "@type": "Product",
-          "name": "<%= title %>",
-          "productID": "<%= id %>",
-          "url": "https://dropitsvg.com/product/<%= id %>",
-          
-        "image": [
-              "<%= imageurl %>"
-            ],
-          
-          "description": "<%= description %>",
-          
-          "brand": {
-            "@type": "Thing",
-            "name": "DROP IT SVG"
-          },
-          "offers": {
-            "@type": "Offer",
-            
-            "priceCurrency": "GBP",
-            "price": "0.00",
-            "availability": "http://schema.org/InStock",
-            "url" : "https://dropitsvg.com/product/<%= title %>",
-            "seller": {
-              "@type": "Organization",
-              "name": "dropitsvg.com"
-            }
+        "@context": "http://schema.org/",
+        "@type": "Product",
+        "name": "<%= title %>",
+        "productID": "<%= id %>",
+        "url": "https://dropitsvg.com/product/<%= id %>",
+        
+      "image": [
+            "<%= imageurl %>"
+          ],
+        
+        "description": "<%= description %>",
+        
+      
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "<%= price %>",
+          priceValidUntil: "2023-12-31"
+          "availability": "http://schema.org/InStock",
+
+          "url" : "https://dropitsvg.com/product/<%= title %>",
+          "seller": {
+            "@type": "Organization",
+           name: "SVG DROP",
+           url: "https://dropitsvg.com",
           }
-        }
+        },
+        sku: <%= id %>
+
+      }
         </script>
         
         
