@@ -780,7 +780,7 @@ app.get('/product-free/:uid/:ok?', function(req, res){
 
 var queryhtml = ``;
 
-databases.query('SELECT * FROM  productss where category="'+category+'" ORDER BY RAND() limit 5' , function (error, results, fields) {
+databases.query('SELECT * FROM  productss where category="'+category+'" and price > 3 ORDER BY RAND() limit 5' , function (error, results, fields) {
   if (error) throw error;
   results.forEach(function(item){
 var titlep = item.title.substring(0,62)+". . . ";
