@@ -49,7 +49,7 @@ paypal.configure({
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@A',
+  password : 'karimaswan22@',
 database:"products"
 
 });
@@ -1342,7 +1342,7 @@ app.get('/category/:categoryid', function(req, res){
   var  categor =  categories[dataid-1]
 
 
-  databases.query('SELECT * FROM  productss WHERE category= "'+categor+'" limit "'+firstp+'","'+lastp+'""' , function (error, results, fields) {
+  databases.query('SELECT * FROM  productss WHERE category= "'+categor+'"' , function (error, results, fields) {
 if(results.length==0){
 
 
@@ -1351,11 +1351,11 @@ if(results.length==0){
 
     var keysearchhtml = ``;
     raport = "No Result For This Category"
-    res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+    res.render("category.ejs",{htmlsearch:keysearchhtml,raport:raport})
     
   }else{
     var bostthrough = parseFloat(page)-1
-    res.redirect("/category/"+dataid+"page="+bostthrough);
+    res.redirect("/category/"+dataid+"?page="+bostthrough);
   }
 
 
@@ -1514,7 +1514,7 @@ New
     var lastpageis = parseFloat(page)-1
   var raport = `Search on category '`+categor+`'`
 
- res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,nextpage:nextpageis,lastpage:lastpageis})
+ res.render("category.ejs",{htmlsearch:keysearchhtml,raport:raport,nextpage:nextpageis,lastpage:lastpageis,categoryterm:dataid})
 
 
 
