@@ -1324,17 +1324,41 @@ reviwes:reviweshtml,
 // });
 app.get('/category/:categoryid', function(req, res){
   var dataid = req.params.categoryid;
-  if(isNaN(dataid)==true)
+  
+  var page = req.query.page;
+ if(page==null || page==undefined || page<=0){
+    page = 1
+  };
+  
+  var lastp = page*20;
+  var firstp = lastp-20;
+
+
+
+
+  if(isNaN(dataid)==true )
      return  res.render("error.ejs",{})
 
   var  categor =  categories[dataid-1]
 
 
-  databases.query('SELECT * FROM  productss WHERE category= "'+categor+'"' , function (error, results, fields) {
+  databases.query('SELECT * FROM  productss WHERE category= "'+categor+'" limit "'+firstp+'","'+lastp+'""' , function (error, results, fields) {
 if(results.length==0){
-  var keysearchhtml = ``;
-  raport = "No Result For This Category"
-  res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+
+
+  if(page==1){
+
+
+    var keysearchhtml = ``;
+    raport = "No Result For This Category"
+    res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+    
+  }else{
+    var bostthrough = parseFloat(page)-1
+    res.redirect("/category/"+dataid+"page="+bostthrough);
+  }
+
+
 
 }else{
 
@@ -1486,10 +1510,11 @@ New
 
   });
 
-
+  var nextpageis = parseFloat(page)+1
+    var lastpageis = parseFloat(page)-1
   var raport = `Search on category '`+categor+`'`
- res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
 
+ res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,nextpage:nextpageis,lastpage:lastpageis})
 
 
 
