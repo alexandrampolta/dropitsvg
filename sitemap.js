@@ -869,12 +869,11 @@ https://i.ibb.co/Rg4sXgs/851.jpg	Donut-Stop-Believing-851.jpeg
 https://i.ibb.co/y4VwkPK/852.jpg	You-Are-The-Sprinkles-To-My-Donut-852.jpeg
 https://i.ibb.co/zZsP3b6/853.jpg	Donut-Stress-Just-Do-Your-Best-853.jpeg`;
 sheet.split("\n").forEach(function(itemm){
-var img =  itemm.split("jpg")[0];
 var netimg =  itemm.split("jpg")[1].replace("	","");
 
-databases.query('UPDATE productss SET image = "https://dropitsvg.com/dropitsvgcom/'+netimg+'" WHERE image like "%'+img+'%";' , function (error, results, fields) {
+databases.query('UPDATE productss SET image = "https://dropitsvg.com/images/dropitsvgcom/'+netimg+'" WHERE image like "%'+netimg+'%";' , function (error, results, fields) {
 
-
+console.log('ok');
 })
 
 })
