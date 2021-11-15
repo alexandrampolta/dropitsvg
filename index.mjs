@@ -108,7 +108,7 @@ max-height: 500px;
 
  
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" srcset="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
 </picture>
 
 
@@ -418,7 +418,7 @@ New
 
 
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" srcset="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
 </picture>
 
 
@@ -626,7 +626,7 @@ max-height: 500px;
 
  
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" srcset="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
 </picture>
 
 
@@ -832,7 +832,7 @@ var queryhtmlcreated = `
   
       
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" srcset="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
     </picture>
     
   
@@ -1159,7 +1159,7 @@ var queryhtmlcreated = `
   
       
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" srcset="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
     </picture>
     
   
@@ -1398,7 +1398,7 @@ New
 
 
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" srcset="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
 </picture>
 
 
