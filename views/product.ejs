@@ -564,7 +564,7 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
-    <body  itemtype="https://schema.org/Product" class="template-product style_product_grid_4 layout_style_suppermarket  before-you-leave-disableMobile product_layout_supermarket" style="font-family: Arial, Helvetica, sans-serif;zoom: 1;"><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <body class="template-product style_product_grid_4 layout_style_suppermarket  before-you-leave-disableMobile product_layout_supermarket" style="font-family: Arial, Helvetica, sans-serif;zoom: 1;"><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="application/ld+json">{"@context": "http://schema.org/", "@type": "Product", "name": "<%= title %>", "productID": "<%= id %>", "url": "https://dropitsvg.com/product/<%= id %>", "sku": "<%= id %>", "brand": { "@type": "Brand", "name": "ACME" },"image": [ "<%= imageurl %>" ], "description": "<%= description %>","aggregateRating": {"@type": "AggregateRating","ratingValue": "4","reviewCount": "250"},"offers": { "@type": "Offer", "price": "<%= price %>", "priceCurrency": "USD", "priceValidUntil": "2023-12-31", "priceSpecification":{"price":"<%= price %>","priceCurrency":"USD","valueAddedTaxIncluded":"false"}, "availability": "http://schema.org/InStock", "url" : "https://dropitsvg.com/product/<%= id %>", "seller": { "@type": "Organization", "name": "SVG DROP", "url": "https://dropitsvg.com"} }}
         </script>
         
@@ -3868,8 +3868,8 @@
                               
                           <div aria-live="polite" class=""><div role="listbox">
 
-<a class=""  data-fancybox="images" tabindex="0" style="width: 30%;position: relative;overflow: hidden;">
-                                      <img  itemprop="image" alt="<%= title %>" 
+<a  style="width: 30%;position: relative;overflow: hidden;">
+                                      <img alt="<%= title %>" 
                                       
                                       style="
                                       width: 500px;
@@ -3997,7 +3997,7 @@
                             Availability:
                         </label>
                         
-                        <span>                            <link itemprop="availability" href="https://schema.org/InStock" />In stock</span>
+                        <span>  In stock</span>
                     </span>
                     </div>
                     
@@ -4023,7 +4023,7 @@
 
                   <div class="prices">
                       
-                      <span class="price" itemprop="price"><span class="money"> $<%= price %></span></span>
+                      <span class="price"><span class="money"> $<%= price %></span></span>
                       
                       <input type="hidden" id="product_regular_price" name="product_regular_price" value="5900">
                   </div>
