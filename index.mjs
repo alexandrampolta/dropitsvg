@@ -102,14 +102,14 @@ max-height: 500px;
 
 
 </div>
-<picture data-index="0">
+<dev >
  
  
 
  
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-</picture>
+<img  src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+</dev>
 
 
      </a>
@@ -412,14 +412,14 @@ New
 
 
 </div>
-<picture data-index="0">
+<dev >
 
 
 
 
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-</picture>
+<img  src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+</dev>
 
 
  </a>
@@ -620,14 +620,14 @@ max-height: 500px;
 
 
 </div>
-<picture data-index="0">
+<dev >
  
  
 
  
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-</picture>
+<img  src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+</dev>
 
 
      </a>
@@ -826,14 +826,14 @@ var queryhtmlcreated = `
     
     
   </div>
-<picture data-index="0">
+<dev >
       
       
   
       
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-    </picture>
+<img  src="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+    </dev>
     
   
           </a>
@@ -1153,14 +1153,14 @@ var queryhtmlcreated = `
     
     
   </div>
-<picture data-index="0">
+<dev >
       
       
   
       
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-    </picture>
+<img  src="`+imagep+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+    </dev>
     
   
           </a>
@@ -1392,14 +1392,14 @@ New
 
 
 </div>
-<picture data-index="0">
+<>
 
 
 
 
 
-<img data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" data-image="" sizes="300px" src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-</picture>
+<img  src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
+</>
 
 
    </a>
