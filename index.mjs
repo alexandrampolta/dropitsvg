@@ -574,6 +574,7 @@ app.get('/search', function(req, res){
     //  res.json({results})
     if(results.length==0){
 console.log("no results");
+var searchterm = req.query.q;
 if(page==1){
   var keysearchhtml= "";
   var raport = `No Match For '`+searchterm+`'`
