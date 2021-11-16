@@ -3,3 +3,5 @@ Allow: /
 Sitemap: https://www.dropitsvg.com/sitemap.xml
 Sitemap: https://www.dropitsvg.com/sitemapp1.xml
 Sitemap: https://www.dropitsvg.com/sitemapp2.xml
+Sitemap: https://dropitsvg.com/imaagesitemap.xml
+
