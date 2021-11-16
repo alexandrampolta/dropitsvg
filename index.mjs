@@ -578,12 +578,12 @@ if(page==1){
   var nextpageis = parseFloat(page)+1
   var lastpageis = parseFloat(page)-1
   var keysearchhtml= "";
-  var raport = `No Match For '`+searchterm+`'`
+  var raport = `No Match For '`+searchterm+`'`;
   res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,searchterm:searchterm,nextpage:nextpageis,lastpage:lastpageis})
   
 }else{
   var bostthrough = parseFloat(page)-1
-  res.redirect("/search?q="+searchterm+"page="+bostthrough);
+  res.redirect("/search?q="+searchterm+"&page="+bostthrough);
 }
 
 
