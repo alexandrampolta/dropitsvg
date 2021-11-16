@@ -578,7 +578,7 @@ var searchterm = req.query.q;
 if(page==1){
   var keysearchhtml= "";
   var raport = `No Match For '`+searchterm+`'`
-  res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport})
+  res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,searchterm:searchterm})
   
 }else{
   var bostthrough = parseFloat(page)-1
