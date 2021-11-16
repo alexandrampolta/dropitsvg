@@ -574,11 +574,12 @@ app.get('/search', function(req, res){
     //  res.json({results})
     if(results.length==0){
 console.log("no results");
-var searchterm = req.query.q;
 if(page==1){
+  var nextpageis = parseFloat(page)+1
+  var lastpageis = parseFloat(page)-1
   var keysearchhtml= "";
   var raport = `No Match For '`+searchterm+`'`
-  res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,searchterm:searchterm})
+  res.render("search.ejs",{htmlsearch:keysearchhtml,raport:raport,searchterm:searchterm,nextpage:nextpageis,lastpage:lastpageis})
   
 }else{
   var bostthrough = parseFloat(page)-1
