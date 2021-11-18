@@ -86,7 +86,7 @@ max-height: 500px;
 <div class="inner-top">
  <div class="">
    <div class="product-image image-swap">
-     <a href="/product/`+response.id+`" class="product-grid-image animate-scale adaptive_height">
+     <a href="/product/`+response.id+`" class="product-grid-image animate-scale ">
        
 
 
@@ -396,7 +396,7 @@ max-height: 500px;
 <div class="inner-top">
 <div class="">
 <div class="product-image image-swap">
- <a href="/product/`+response.id+`" class="product-grid-image animate-scale adaptive_height">
+ <a href="/product/`+response.id+`" class="product-grid-image animate-scale ">
    
 
 
@@ -606,7 +606,7 @@ max-height: 500px;
 <div class="inner-top">
  <div class="">
    <div class="product-image image-swap">
-     <a href="/product/`+response.id+`" class="product-grid-image animate-scale adaptive_height">
+     <a href="/product/`+response.id+`" class="product-grid-image animate-scale ">
        
 
 
@@ -721,7 +721,7 @@ max-height: 500px;
 
    </div>
 
-   
+   </br>
    
    
 
@@ -801,7 +801,7 @@ var queryhtmlcreated = `
     <div class="inner-top">
       <div class="">
         <div class="product-image image-swap">
-          <a href="/product/`+idp+`" class="product-grid-image animate-scale adaptive_height" >
+          <a href="/product/`+idp+`" class="product-grid-image animate-scale " >
             
   
   
@@ -926,8 +926,8 @@ var queryhtmlcreated = `
   
   
         </div>
-  
-        
+        </br>
+        </br>
         
         
   
@@ -1128,7 +1128,7 @@ var queryhtmlcreated = `
     <div class="inner-top">
       <div class="">
         <div class="product-image image-swap">
-          <a href="/product/`+idp+`" class="product-grid-image animate-scale adaptive_height" >
+          <a href="/product/`+idp+`" class="product-grid-image animate-scale " >
             
   
   
@@ -1257,7 +1257,7 @@ var queryhtmlcreated = `
         
         
         
-  
+        </br>
         
   
       </div>
@@ -1378,7 +1378,7 @@ max-height: 500px;
 <div class="inner-top">
 <div class="">
  <div class="product-image image-swap">
-   <a href="/product/`+response.id+`" class="product-grid-image animate-scale adaptive_height">
+   <a href="/product/`+response.id+`" class="product-grid-image animate-scale ">
      
 
 
@@ -1494,7 +1494,7 @@ New
  </div>
 
  
- 
+ </br>
  
 
  
