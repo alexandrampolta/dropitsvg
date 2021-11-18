@@ -201,7 +201,7 @@ max-height: 500px;
 
    </div>
 
-   
+   </br>
    
    
 
@@ -509,7 +509,7 @@ New
 
 
 
-
+</br>
 </div>
 
 
@@ -720,7 +720,7 @@ max-height: 500px;
 
 
    </div>
-
+   </br>
    </br>
    
    
@@ -926,7 +926,6 @@ var queryhtmlcreated = `
   
   
         </div>
-        </br>
         </br>
         
         
