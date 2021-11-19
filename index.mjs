@@ -49,7 +49,7 @@ paypal.configure({
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@A',
+  password : 'karimaswan22@',
 database:"products"
 
 });
@@ -1337,11 +1337,13 @@ app.get('/category/:categoryid', function(req, res){
 
 
 
-  if(isNaN(dataid)==true )
+  if(isNaN(dataid)==true)
      return  res.render("error.ejs",{})
 
   var  categor =  categories[dataid-1]
-
+  console.log(categor);
+  if(categor==null || categor==undefined)
+    return  res.render("error.ejs",{})
 
   databases.query('SELECT * FROM  productss WHERE category= "'+categor+'"' , function (error, results, fields) {
 if(results.length==0){
@@ -1352,7 +1354,7 @@ if(results.length==0){
 
     var keysearchhtml = ``;
     raport = "No Result For This Category"
-    res.render("category.ejs",{htmlsearch:keysearchhtml,raport:raport})
+    res.render("category.ejs",{htmlsearch:keysearchhtml,raport:raport,categoryterm:categor})
     
   }else{
     var bostthrough = parseFloat(page)-1
