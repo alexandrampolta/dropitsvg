@@ -762,7 +762,7 @@ app.get('/product-free/:uid/:ok?', function(req, res){
           return res.render("error.ejs",{})
       if(results[0].price==0){
       var title = results[0].title
-      titlecop = item.title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-");
+      titlecop = title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-");
 
       var touchtitle = title.split(' ');
       var title_mini = touchtitle[0]+" "+touchtitle[1]+" "+touchtitle[2]
