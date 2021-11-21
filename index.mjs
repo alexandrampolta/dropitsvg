@@ -762,6 +762,8 @@ app.get('/product-free/:uid/:ok?', function(req, res){
           return res.render("error.ejs",{})
       if(results[0].price==0){
       var title = results[0].title
+      titlecop = item.title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-");
+
       var touchtitle = title.split(' ');
       var title_mini = touchtitle[0]+" "+touchtitle[1]+" "+touchtitle[2]
 
@@ -786,6 +788,7 @@ databases.query('SELECT * FROM  productss where category="'+category+'" ORDER BY
   if (error) throw error;
   results.forEach(function(item){
 var titlep = item.title.substring(0,62)+". . . ";
+var titlecopp = item.title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-");
 var pricep = item.price;
 var imagep = item.image;
 var idp = item.id;
@@ -801,7 +804,7 @@ var queryhtmlcreated = `
     <div class="inner-top">
       <div class="">
         <div class="product-image image-swap">
-          <a href="/product/`+idp+`" class="product-grid-image animate-scale " >
+          <a href="/product/`+idp+`/`+titlecopp+`" class="product-grid-image animate-scale " >
             
   
   
@@ -868,7 +871,7 @@ var queryhtmlcreated = `
   
         
   
-        <a class="" href="/product/`+idp+`">
+        <a class="" href="/product/`+idp+`/`+titlecopp+`">
           
   <span>
    `+titlep+`
@@ -911,7 +914,7 @@ var queryhtmlcreated = `
     
       
         
-          <a class="btn" href="/product/`+idp+`" title="">Quick View</a>
+          <a class="btn" href="/product/`+idp+`/`+titlecopp+`" title="">Quick View</a>
         
       
     
@@ -961,7 +964,7 @@ res.render("productfree.ejs",{
  title_mini : title_mini,
 id:ids,
 comman:queryhtml,
-
+titlecop:titlecop,
 
 
 })
@@ -1089,6 +1092,7 @@ app.get('/product/:uid/:ok?', function(req, res){
 
          })
       var title = results[0].title
+      var titlecop = title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-");
       var touchtitle = title.split(' ');
       var title_mini = touchtitle[0]+" "+touchtitle[1]+" "+touchtitle[2]
 
@@ -1111,6 +1115,8 @@ var queryhtml = ``;
 databases.query('SELECT * FROM  productss where category="'+category+'" and price > 0  ORDER BY RAND() limit 5' , function (error, results, fields) {
   if (error) throw error;
   results.forEach(function(item){
+var titlecopp = item.title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-");
+
 var titlep = item.title.substring(0,62)+". . . ";
 var pricep = item.price;
 var imagep = item.image;
@@ -1127,7 +1133,7 @@ var queryhtmlcreated = `
     <div class="inner-top">
       <div class="">
         <div class="product-image image-swap">
-          <a href="/product/`+idp+`" class="product-grid-image animate-scale " >
+          <a href="/product/`+idp+`/`+titlecopp+`" class="product-grid-image animate-scale " >
             
   
   
@@ -1194,7 +1200,7 @@ var queryhtmlcreated = `
   
         
   
-        <a class="" href="/product/`+idp+`">
+        <a class="" href="/product/`+idp+`/`+titlecopp+`">
           
   <span>
    `+titlep+`
@@ -1237,7 +1243,7 @@ var queryhtmlcreated = `
     
       
         
-          <a class="btn" href="/product/`+idp+`" title="">Quick View</a>
+          <a class="btn" href="/product/`+idp+`/`+titlecopp+`" title="">Quick View</a>
         
       
     
@@ -1287,7 +1293,7 @@ res.render("product.ejs",{
 id:ids,
 comman:queryhtml,
 reviwes:reviweshtml,
-
+titlecop:titlecop
 
 })
 
@@ -1350,11 +1356,12 @@ if(results.length==0){
 
 
   if(page==1){
-
+    var nextpageis = parseFloat(page)+1
+    var lastpageis = parseFloat(page)-1
 
     var keysearchhtml = ``;
     raport = "No Result For This Category"
-    res.render("category.ejs",{htmlsearch:keysearchhtml,raport:raport,categoryterm:categor})
+    res.render("category.ejs",{htmlsearch:keysearchhtml,raport:raport,categoryterm:categor,lastpage:lastpageis,nextpage:nextpageis})
     
   }else{
     var bostthrough = parseFloat(page)-1
@@ -1395,14 +1402,12 @@ New
 
 
 </div>
-<>
 
 
 
 
 
 <img  src="`+response.image+`" class="images-one lazyautosizes ls-is-cached lazyloaded">
-</>
 
 
    </a>
