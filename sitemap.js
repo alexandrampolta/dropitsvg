@@ -129,7 +129,7 @@ import fs from "fs"
 databases.query('select * from productss where image like "%dropitsvghl%"' , function (error, results, fields) {
  var a = "";
   results.forEach(function(itemo){
-    if(id>=2664){
+    if(itemo.id>=2664){
  fs.writeFile("./public/datawewant.txt",a, 'utf8', err => {
  if (err) throw err;
 console.log('File has been saved!');
