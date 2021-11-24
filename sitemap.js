@@ -127,7 +127,7 @@ import fs from "fs"
 // }
 // },200)
 databases.query('select * from productss where image like "%dropitsvghl%"' , function (error, results, fields) {
-  a = "";
+ var a = "";
   results.forEach(function(itemo){
     if(id>=2664){
  fs.writeFile("./public/datawewant.txt",a, 'utf8', err => {
