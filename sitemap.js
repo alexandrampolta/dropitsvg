@@ -86,9 +86,30 @@ import fs from "fs"
 //       var imagename = itemo.image;
 //       var id = itemo.id;
 
+<<<<<<< HEAD
 //      a = a+"\n"+id+"  "+title+"   "+imagename;
 
 //     }
+=======
+// }
+// },200)
+databases.query('select * from productss where image like "%dropitsvghl%"' , function (error, results, fields) {
+ var a = "";
+  results.forEach(function(itemo){
+    if(itemo.id>=2664){
+ fs.writeFile("./public/datawewant.txt",a, 'utf8', err => {
+ if (err) throw err;
+console.log('File has been saved!');
+});
+    }else{
+      var title = itemo.title;
+      var imagename = itemo.image;
+      var id = itemo.id;
+
+     a = a+"\n"+id+"  "+title+"   "+imagename;
+
+    }
+>>>>>>> 350edf1a9c1972b83b5d9f190a0393c449699593
    
 
 
