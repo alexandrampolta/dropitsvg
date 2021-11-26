@@ -287,8 +287,17 @@ app.get('/279262', function(req, res){
 //   console.log(results)
 // });
 
+app.get('/createlisting', function(req, res){
+
+  res.render("listing.ejs")
 
 
+
+});
+app.post("/add", async (req, res) => { 
+
+
+})
 
 
 

@@ -1,4 +1,5 @@
 User-agent: *
+User-agent: Googlebot-image
 Allow: /
 Sitemap: https://www.dropitsvg.com/sitemap.xml
 Sitemap: https://www.dropitsvg.com/sitemapp1.xml

@@ -3,7 +3,7 @@ import mysql from 'mysql';
 var databases = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : 'karimaswan22@A',
+    password : 'karimaswan22@',
   database:"products"
   
   });
@@ -70,78 +70,25 @@ import fs from "fs"
 
 
 // var rangee = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min + i);
-// var num1 = 1363
-// var num2 = 1782
 
-// var sitemapp = 3
-
-// var a = `<?xml version="1.0" encoding="UTF-8"?>
-// <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">`;
-// var allow = true
-// setInterval(function(){
-//   if(allow==true){
-//   allow = false 
-//  var  allnums = rangee(num1, num2);
-
-//   allnums.forEach(function(productid){
-//     databases.query('SELECT * FROM productss where id = "'+productid+'"' , function (error, results, fields) {
-//       if (error) throw error;
-//       if(results.length==0){
-
-//       }else{
-
-//         var minit  = results[0].title.toString().replace(/,/g,"").replace(/ /g,"-").replace(/:/g,"").replace(/!/g,"").replace(/--/g,"-").replace(/&/g,"-")
-// var productidto = results[0].id
-
-//         a = a+"\n"+`<url>
-// <loc>https://dropitsvg.com/product/`+productidto+`/`+minit+`</loc>
-// <changefreq>weekly</changefreq>
-// <priority>1.0</priority>
-// </url>`
-
-
-     
-//       }
-        
-
-
-
-// if(productid==num2){
-//   // console.log(a)
-
- 
-//   a = a+"\n"+`</urlset>`
-//  fs.writeFile("./public/sitemapp"+sitemapp+".xml",a, 'utf8', err => {
-//         if (err) throw err;
-//         console.log('File has been saved!');
-//              });
-
-
-
-
-// }
+// databases.query('select * from productss' , function (error, results, fields) {
+//  var a = "";
+//   results.forEach(function(itemo){
+//     if(id>=results.length){
+//       console.log("popo")
+//  fs.writeFile("./public/datawewant.xml",a, 'utf8', err => {
+//  if (err) throw err;
+// console.log('File has been saved!');
 // });
-// });
-// }else{
+//     }else{
+//       console.log("working");
+//       var title = itemo.title;
+//       var imagename = itemo.image;
+//       var id = itemo.id;
 
-// }
-// },200)
-databases.query('select * from productss where image like "%dropitsvghl%"' , function (error, results, fields) {
- var a = "";
-  results.forEach(function(itemo){
-    if(id>=2664){
- fs.writeFile("./public/datawewant.txt",a, 'utf8', err => {
- if (err) throw err;
-console.log('File has been saved!');
-});
-    }else{
-      var title = itemo.title;
-      var imagename = itemo.image;
-      var id = itemo.id;
+//      a = a+"\n"+id+"  "+title+"   "+imagename;
 
-     a = a+"\n"+id+"  "+title+"   "+imagename;
-
-    }
+//     }
    
 
 
@@ -149,12 +96,12 @@ console.log('File has been saved!');
 
 
 
-  });
+//   });
 
 
 
 
 
-});
+// });
 
 
