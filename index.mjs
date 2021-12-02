@@ -1790,7 +1790,7 @@ let transporter = nodemailer.createTransport({
   let mailOptions = {
   from: "dropitsvgsup@hotmail.com",
   to:buyerEmail ,
-  subject: 'You have purchased from svgdrop.com',
+  subject: 'You have purchased from dropitsvg.com',
   text: '', 
 
 
