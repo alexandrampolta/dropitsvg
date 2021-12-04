@@ -965,8 +965,12 @@ console.log(zipo);
 
 var tagat =""
 tags.replace(/[^a-zA-Z ]/g, "").split(" ").forEach(function(tag){
+if(tag==" " || tag==""){
 
-tagat = tagat+`<div class="swatch-element"><label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label></div>`
+}else{
+  tagat = tagat+`<div class="swatch-element"><label><a ref="dofollow" href="/search?q=`+tag.replace(/[^a-zA-Z ]/g, "")+`">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label></div>`
+
+}
 
 });
 
@@ -1295,13 +1299,17 @@ var queryhtmlcreated = `
 `
 queryhtml = queryhtml+queryhtmlcreated
 })
+
 var tagat =""
 tags.replace(/[^a-zA-Z ]/g, "").split(" ").forEach(function(tag){
+if(tag==" " || tag==""){
 
-tagat = tagat+`<div class="swatch-element"><label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label></div>`
+}else{
+  tagat = tagat+`<div class="swatch-element"><label><a ref="dofollow" href="/search?q=`+tag.replace(/[^a-zA-Z ]/g, "")+`">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label></div>`
+
+}
 
 });
-
 var category_id = num+1
 console.log(category_id);
 res.render("product.ejs",{
