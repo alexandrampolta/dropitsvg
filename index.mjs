@@ -966,7 +966,7 @@ console.log(zipo);
 var tagat =""
 tags.replace(/[^a-zA-Z ]/g, "").split(" ").forEach(function(tag){
 
-tagat = tagat+`<label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label><i>&nbsp;</i>`
+tagat = tagat+`<div class="swatch-element"><label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label></div>`
 
 });
 
@@ -1298,7 +1298,7 @@ queryhtml = queryhtml+queryhtmlcreated
 var tagat =""
 tags.replace(/[^a-zA-Z ]/g, "").split(" ").forEach(function(tag){
 
-tagat = tagat+`<label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label><i>&nbsp;</i>`
+tagat = tagat+`<div class="swatch-element"><label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label></div>`
 
 });
 
