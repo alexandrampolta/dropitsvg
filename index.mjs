@@ -962,12 +962,21 @@ var category_id = num+1
 console.log(category_id);
 var zipo = zip.toString().split("id=")[1].split("&")[0]
 console.log(zipo);
+
+var tagat =""
+tags.replace(/[^a-zA-Z ]/g, "").split(" ").forEach(function(tag){
+
+tagat = tagat+`<label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label><i>&nbsp;</i>`
+
+});
+
+
 res.render("productfree.ejs",{
   title:title,
   zip:zipo,
   imageurl:imageurl,
   description:description,
- tags:tags,
+ tags:tagat,
  category:category,
  category_id:category_id,
  title_mini : title_mini,
@@ -1286,7 +1295,12 @@ var queryhtmlcreated = `
 `
 queryhtml = queryhtml+queryhtmlcreated
 })
+var tagat =""
+tags.replace(/[^a-zA-Z ]/g, "").split(" ").forEach(function(tag){
 
+tagat = tagat+`<label><a ref="dofollow" href="+tag.replace(/[^a-zA-Z ]/g, "")+">`+tag.replace(/[^a-zA-Z ]/g, "")+`</a></label><i>&nbsp;</i>`
+
+});
 
 var category_id = num+1
 console.log(category_id);
@@ -1295,7 +1309,7 @@ res.render("product.ejs",{
   imageurl:imageurl,
   price : price,
  description:description,
- tags:tags,
+ tags:tagat,
  category:category,
  category_id:category_id,
  title_mini : title_mini,
