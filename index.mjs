@@ -49,7 +49,7 @@ paypal.configure({
 var databases = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'karimaswan22@A',
+  password : 'karimaswan22@',
 database:"products"
 
 });
@@ -60,12 +60,6 @@ if(err)
  console.log("MySQL active . . .");
 
 });
-
-app.get('/ladminpanelweb', function(req, res){
-
-  res.render("adminpanelweb.ejs",{})
-
-})
 
 
 
@@ -251,7 +245,7 @@ app.get('/279262', function(req, res){
   databases.query('SELECT * FROM productss' , function (error, results, fields) {
     if (error) throw error;
     var lengthofrows = results.length
-    res.render("adminpage.ejs",{lengthofrows:lengthofrows})
+    res.render("createlisting.ejs",{lengthofrows:lengthofrows})
   });
 
 
@@ -287,17 +281,6 @@ app.get('/279262', function(req, res){
 //   console.log(results)
 // });
 
-app.get('/createlisting', function(req, res){
-
-  res.render("listing.ejs")
-
-
-
-});
-app.post("/add", async (req, res) => { 
-
-
-})
 
 
 
@@ -318,19 +301,47 @@ const range = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min 
 
 
 
+app.post("/uploaddata", async (req, res) => { 
 
-app.post("/createlisting2", async (req, res) => { 
- var  title = req.body.title
- var  price = req.body.price
- var  tags = req.body.tags
-  var zip = req.body.zip
-  var image = req.body.image
-  var description = req.body.description
-  var category = req.body.category
+  if(req.files==null){
+    var image = JSON.parse(req.body.alldata).image
+    runo(image)
+    }else{
+      var val = Math.floor(1000 + Math.random() * 9000);
+      var imagefile = req.files.imagefile;
+     var imagename = imagefile.name;
+      var uploadpath = __dirname+'/public/images/newfiles/'+imagename
+      imagefile.mv(uploadpath,function(err){
+        if(err){
+      console.log("ops");
+      return res.send("ops")
+        }else{
+        var image = "https://dropitsvg.com/images/newfiles/"+imagename;
+        console.log(image)
+        runo(image)
+        }
+      })
+    
+    
+    
+    };
+
+
+function runo(image){
+
+
+    
+ var  title =  JSON.parse(req.body.alldata).title
+ var  price =  JSON.parse(req.body.alldata).price
+ var  tags =  JSON.parse(req.body.alldata).tags
+  var zip =  JSON.parse(req.body.alldata).zip
+  var description =  JSON.parse(req.body.alldata).description
+  var category =  JSON.parse(req.body.alldata).category
 
    
 
   var categorymain = categories[category];
+
 var data = {
   title:title,
   price:price,
@@ -341,6 +352,8 @@ var data = {
   category:categorymain
 
   };
+  console.log(data);
+
     databases.query('INSERT INTO productss SET ?' , data,function (error, results, fields) {
       if (error) throw error;
       databases.query('SELECT * FROM productss	' , function (error, results, fields) {
@@ -349,7 +362,7 @@ var data = {
       
       res.json({"status":"good"})
     });
-
+  }
 })
 
 
@@ -565,14 +578,18 @@ app.get('/search', function(req, res){
   var firstp = lastp-20;
 
   var searchterm = req.query.q;
-  if(searchterm==null || searchterm==undefined || searchterm=="")
+  if(searchterm==null || searchterm==undefined || searchterm=="" || searchterm==" ")
    return res.redirect("/shop")
 
   var worddb = 'SELECT * FROM productss where id like "%ded%"';
   searchterm.split(" ").forEach(function(keyword){
+if(keyword==" "){
 
+}else{
+  worddb = worddb+" "+'OR  tags like "%'+keyword+'%"'
 
-    worddb = worddb+" "+'OR  tags like "%'+keyword+'%"'
+}
+
 
   });
  

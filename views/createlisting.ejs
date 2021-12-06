@@ -10,17 +10,19 @@
             <div class="contact-form-wrapper">
                <div data-w-id="25a6f6c7-f773-96ea-477c-53bd9ccd55fb" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="card contact">
                   <div class="contact-form-block w-form">
-                     <form id="listing">
-                        <h5 class="title contact-form">You have Listed <%= lengthofrows %> of Items</h5>
+                     <form id="createlisting">
+                        <h5 class="title contact-form"></h5>
                         <h3 class="title contact-form">List A design</h3><div class="w-layout-grid contact-form-grid">
     
-<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" placeholder="Product Title" id="title" required=""></div>
-<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" placeholder="Price" id="price" value="1.39"></div>
-<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" id="imageurl" required="" placeholder="Image URL"></div>
-<div class="input-wrapper"><input type="text" class="input w-input" maxlength="256" id="zipurl" placeholder="Google Drive URL" required=""></div>
-<div class="input-wrapper"><textarea placeholder="Description" maxlength="5000" id="description" class="message w-input"></textarea></div>
-<div class="input-wrapper"><textarea placeholder="Tags" maxlength="5000" id="tags" class="message w-input"></textarea></div>
-<div class="input-wrapper"><select placeholder="Tags" maxlength="5000" id="category" class="message w-input">
+<div class="input-wrapper"><input type="text" class="input w-input"  placeholder="Product Title" id="title" required="true"></div>
+<div class="input-wrapper"><input type="text" class="input w-input"  placeholder="Price" id="price" value="1.39"></div>
+<div class="input-wrapper"><input type="text" class="input w-input"  id="imageurl" placeholder="Image URL"></div>
+<div class="input-wrapper"><input type="file" class="input w-input"  id="imageup" placeholder="Upload image"></div>
+
+<div class="input-wrapper"><input type="text" class="input w-input"  id="zipurl" placeholder="Google Drive URL" required="true"></div>
+<div class="input-wrapper"><textarea placeholder="Description" required="true" id="description" class="message w-input"></textarea></div>
+<div class="input-wrapper"><textarea placeholder="Tags" required="true" id="tags" class="message w-input"></textarea></div>
+<div class="input-wrapper"><select placeholder="Tags" required="true" id="category" class="message w-input">
   <option value="0">Anime</option>
   <option value="1">cartoon</option>
   <option value="2">gaming</option>
@@ -59,7 +61,9 @@
 
 <script>
 
-  document.getElementById("listing").addEventListener("submit", (e) => {
+
+
+  document.getElementById("createlisting").addEventListener("submit", (e) => {
  e.preventDefault();
  title = document.getElementById("title").value;
    price = document.getElementById("price").value;
@@ -72,11 +76,8 @@
    tags = document.getElementById("tags").value;
    category = document.getElementById("category").value;
    
-     fetch("/createlisting2", {
-       method: "POST",
-       headers: { "Content-type": "application/json" },
-
-       body: JSON.stringify({
+    
+    var userinfo =  JSON.stringify({
 title ,
  price ,
  tags ,
@@ -87,17 +88,18 @@ title ,
 
 
 
-       })
-      })
-       .then((res) => res.json())
-       .then((data) => {
+});
+var formData = new FormData();
+formData.append("alldata", userinfo);
+formData.append("imagefile", document.querySelector("#imageup").files[0]);
+var request = new XMLHttpRequest();
+request.open("POST", "/uploaddata");
+request.send(formData);
+
    
-       })
    
    
-   
-   
-  })
+})
    
    
       </script>
