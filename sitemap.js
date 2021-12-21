@@ -901,7 +901,7 @@ import mysql from 'mysql';
 var databases = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : 'karimaswan22@',
+    password : 'Karimaswan22@',
   database:"products"
   
   });
@@ -915,7 +915,7 @@ var databases = mysql.createConnection({
 drives.split("\n").forEach(function(item){
 databases.query('SELECT * FROM productss where zip like "%'+item+'%" ' , function (error, results, fields) {
       if (error) throw error;
-    newdata = results.image.replace("dropitsvgpl","dropitsvghl")
+    newdata = results[0].image.replace("dropitsvgpl","dropitsvghl")
     databases.query('UPDATE productss SET image = "'+newdata+'" WHERE zip like "%'+item+'%";' , function (error, results, fields) {
 console.log(error);
 console.log('ok');
